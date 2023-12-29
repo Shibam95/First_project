@@ -166,9 +166,11 @@ useEffect(() => {
                     </div>
                 </div>
             </div>
-
-            <div className="md-5" style={{marginTop:"10px"}}>
+            <div style={{display:"flex",justifyContent:"center",alignItems:"center",marginTop:"2px"}}>
+            <h5 className="text-uppercase mb-4" style={{ paddingLeft: "70px" }}>Search</h5></div>
+            <div >
             <div className="input-group">
+            
               <form  style={{display:"flex",justifyContent:"center",alignItems:"center",margin:"auto"}}>
                 <div className="input-group-append">
                   <input
@@ -194,6 +196,28 @@ useEffect(() => {
               </form>
             </div>
           </div>
+
+
+
+            {/* Tag Cloud */}
+            <h5 style={{ paddingLeft: "170px", fontWeight: "600", fontSize: "1.5rem", color: "#333", marginBottom:"5px" }}>Tags</h5>
+
+            <div className="d-flex flex-wrap m-n1">
+            {moreData1?.data?.map((tag1, k) => (
+                <div key={k} className="d-flex flex-wrap m-n1">
+                    <ul style={{ listStyle: "none" }}>
+                        <button
+                            onClick={() => handleButtonClick(tag1.tags)}
+                            className='btn btn-light m-1'
+                            style={{ fontSize: "15px", backgroundColor: "#3498db", color: "#fff" }}
+                        >
+                            <li>{tag1.tags}</li>
+                        </button>
+                    </ul>
+                </div>
+            ))}
+        </div>
+        
     
 
             <div className="container-fluid py-5">
@@ -341,30 +365,7 @@ useEffect(() => {
                             <div className="mb-5" style={{ paddingLeft: "80px", display: "flex" }}>
  
   
-                                 {/* Tag Cloud */}
-                                 <>
-                                 <div className="mb-5">
-                                 <h5 className="text-uppercase mb-4" style={{ paddingLeft: "70px" }}> Tags</h5>
-                                 <div className="d-flex flex-wrap m-n1" style={{ paddingLeft: "50px" }}>
-                                 
-                                 {
-                                  moreData1?.data?.map((tag1,k)=>{
-                                      return(
-                                          <>
-                                          <div key={k} className="d-flex flex-wrap m-n1">
-                                          <ul style={{listStyle:"none"}}>
-                                              <button onClick={() => handleButtonClick(tag1.tags)} className='btn btn-light m-1' style={{ "font-size": "15px" }}> <li> {tag1.tags}</li></button>
-                                          </ul>
-                                          </div>
-                                          </>
-                                      )
-                                  })
-                              }
-                                     
-                                                            
-                                 </div>
-                                    </div>
-                                  </>
+                               
                                        {/* Category List */}
                              <div className="mb-5" style={{ borderRight: "1px solid #ccc", paddingRight: "10px" }}>
                              
@@ -379,7 +380,9 @@ useEffect(() => {
                                          <>
                                          <div key={k} className="d-flex flex-wrap m-n1">
                                          <ul style={{listStyle:"none"}}>
-                                             <button onClick={() => handleButtonClick1(location.category)} className='btn btn-light m-1' style={{ "font-size": "15px" }}> <li> {location.category}</li></button>
+                                             <button  onClick={() => handleButtonClick1(location.category)}  className='btn btn-light m-1'
+                                             style={{ fontSize: "15px", backgroundColor: "#3498db", color: "#fff" }}
+                                         > <li> {location.category}</li></button>
                                          </ul>
                                          </div>
                                          </>
