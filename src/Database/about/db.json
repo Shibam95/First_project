@@ -1,0 +1,88 @@
+{
+    "banner":[
+        {
+            "title":"Wanderlust Adventures",
+            "body":"Let's Discover The World Together",
+            "image":"https://www.tourmyindia.com/blog//wp-content/uploads/2021/03/Solo-Travel-in-India-Feature.jpg"
+           
+           
+
+        },
+        {
+            "title":"Wander and Wonder",
+            "body":"Capturing memories, creating stories.",
+            "image":"https://www.edsys.in/wp-content/uploads/best-places-to-visit-andaman-nicobar-islands.png"
+          
+            
+
+        },
+        {
+            "title":"Passport to Paradise",
+            "body":"Unforgettable vacations, extraordinary memories.",
+            "image":"https://i0.wp.com/sumittours.com/wp-content/uploads/2022/04/637764014976324511.jpg?fit=1170%2C659&ssl=1"
+          
+            
+
+        }
+    ],
+    "about":[
+        {
+            "title1":"Discover the World with Golden Wings",
+            "title2":"Discover the World with Golden Wings",
+            "title3":"Why choose Golden Wings?",
+            "title4":"Lets just explore Our India Together",
+            "title5":"Unveiling the Golden Wings Experience",
+            "title6":"Make your Destination memorable with Us",
+            "img":"https://www.tourism-of-india.com/blog/wp-content/uploads/2021/03/ISKCON-vrindavan.jpg",
+            "img1":"https://www.tripsavvy.com/thmb/OIV8wxT3sJYTuVONF2LI-F4lhXM=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/GettyImages-148666156-56a3c3c65f9b58b7d0d39fb7.jpg",
+            "img2":"https://imgnew.outlookindia.com/public/uploads/articles/2019/6/27/chinese-tourists.jpg",
+            "img3":"https://wallpaperaccess.com/full/133822.jpg",
+            "img4":"https://www.indianchamber.org/wp-content/uploads/2019/09/5.jpg",
+            "body":"Our mission is to make your travel dreams a reality. Whether you're planning a relaxing beach getaway, an adventurous trek through the mountains, or an immersive cultural expedition, we have the expertise to curate the perfect itinerary just for you.",
+            "ReadMore1":"Welcome to Golden Wings, your passport to unforgettable travel experiences around the world. We are a premier tour and travel website dedicated to providing exceptional services and creating dream vacations for our esteemed clients.At Golden Wings, we understand that travel is not just about reaching a destination; it's about the journey and the memories you make along the way. Our team of experienced travel experts is passionate about crafting unique itineraries that cater to your individual preferences and interests, ensuring every trip is tailored to perfection.Choose Golden Wings for a truly unforgettable travel experience. Embark on a journey with us, and let our wings carry you to the far corners of the world, unlocking the treasures that await. Your dream vacation is just a few clicks away. Start your adventure today with Golden Wings!",
+            "ReadMore2":"With Golden Wings, you can embark on a journey of discovery, immersing yourself in diverse cultures, breathtaking landscapes, and extraordinary adventures. Whether you seek an exotic beach getaway, a thrilling wildlife safari, a historic exploration, or a culinary escapade, we have a wide range of destinations and curated packages to fulfill your wanderlust.Explore the details of our tour packages and discover the range of activities and attractions that await you. Our website provides comprehensive information to help you make informed decisions about your travel plans. From essential travel tips to detailed descriptions of each itinerary, we strive to make your planning process effortless and exciting.Explore the details of our tour packages and discover the range of activities and attractions that await you. Our website provides comprehensive information to help you make informed decisions about your travel plans. From essential travel tips to detailed descriptions of each itinerary, we strive to make your planning process effortless and exciting.",
+            "ReadMore3":" Welcome to the India section of Golden Wings, where we invite you to embark on an extraordinary journey through the captivating land of vibrant colors, rich history, and diverse cultures. As a premier tour and travel website, we are dedicated to showcasing the very best of India, offering curated itineraries that showcase the country's awe-inspiring landmarks, cultural heritage, and natural wonders.India, with its vastness and diversity, has something to offer for every traveler. From the majestic Taj Mahal in Agra to the bustling streets of Delhi, the serene backwaters of Kerala to the spirituality of Varanasi, our expertly crafted tour packages capture the essence of India's iconic destinations and hidden gems. Our itineraries are designed to provide a seamless blend of must-visit attractions, immersive cultural experiences, and opportunities for relaxation and rejuvenation.",
+            "ReadMore4":"Our expert team of travel enthusiasts works tirelessly to curate packages that encompass the essence of each location. From the bustling streets of cosmopolitan cities to the serene landscapes of untouched natural wonders, we ensure that every aspect of your trip is meticulously planned and executed to perfection.Discover the hidden gems of the world through our carefully selected local guides who possess in-depth knowledge and a passion for sharing their culture and traditions. Our itineraries are designed to immerse you in the authentic experiences of each destination, allowing you to create cherished memories that will last a lifetime.",
+            "ReadMore5":"At Golden Wings, we go the extra mile to provide personalized service. Our dedicated team of travel experts is available around the clock to assist you with any queries, offer travel advice, and tailor your itinerary to match your preferences and interests. We believe that every traveler is unique, and we strive to create unforgettable experiences that align with your desires.Navigate through our user-friendly website to explore our enticing range of destinations, tour packages, and travel resources. Our goal is to make your trip planning process seamless and enjoyable, allowing you to focus on creating memories that last a lifetime.Join the ranks of satisfied travelers who have experienced the world with Golden Wings. Let us be your trusted companion in turning your travel dreams into reality. Start your journey today!.",
+            "image1":"https://www.pixelstalk.net/wp-content/uploads/images6/4K-Travel-Wallpaper-HD-Free-download.jpg", 
+            "cardtitle1":"Munnar",
+            "description1":"Nestled in the Western Ghats, Munnar is a hill station renowned for its picturesque tea plantations.",
+            "cardtitle2":"Alleppey (Alappuzha)",
+            "description2":"Known as the Venice of the East, Alleppey is famous for its backwaters, houseboat cruises.",
+            "cardtitle3":"Kochi (Cochin)",
+            "description3":"As a vibrant port city with a rich historical background, Kochi offers a blend of modernity.",
+            "cardtitle4":"Kovalam",
+            "description4":"This coastal town is famous for its crescent-shaped beaches and tranquil blue waters..",
+            "cardtitle5":"Victoria Memorial",
+            "description5":"The Victoria Memorial is an iconic landmark in Kolkata and a tribute to Queen Victoria.",
+            "cardtitle6":"Howrah Bridge",
+            "description6":"Howrah Bridge is one of Kolkata's most famous landmarks. Spanning the Hooghly River.",
+            "cardtitle7":"Dakshineswar Temple",
+            "description7":" Situated on the eastern bank of the Hooghly River,the Temple is a significant Hindu temple.",
+            "cardtitle8":"Park Street",
+            "description8":"Park Street is a bustling thoroughfare and a popular entertainment district in Kolkata.",
+            "cardtitle9":"Red Fort",
+            "description9":"The Red Fort is an iconic UNESCO World Heritage site. Built by Emperor Shah Jahan",
+            "cardtitle10":"Qutub Minar",
+            "description10":" It is the tallest brick minaret in the world.The complex also houses other architectural marvels.",
+            "cardtitle11":"India Gate",
+            "description11":" India Gate is a war memorial located in the heart of Delhi. It was built to honor the Indian soldiers who sacrificed their lives during World War.",
+            "cardtitle12":"Lotus Temple",
+            "description12":" The Lotus Temple is a distinctive architectural marvel and a Bahá'í House of Worship. ",
+            "image2":"https://etimg.etb2bimg.com/photo/99296530.cms" ,
+            "image3": "https://media.istockphoto.com/id/177447843/photo/house-boat-in-backwaters.jpg?s=612x612&w=0&k=20&c=9RnNr22SKJiNKuOukgfo82TtSgvSLMIZALXNf4m_VPM=",
+            "image4": "https://assets.traveltriangle.com/blog/wp-content/uploads/2014/11/Cochin-Skyline.jpg" ,
+            "image5": "https://www.holidify.com/images/bgImages/KOVALAM.jpg",
+            "image6": "https://www.fabhotels.com/blog/wp-content/uploads/2019/05/Victoria-Memorial_600.jpg",
+            "image7": "https://assets.telegraphindia.com/telegraph/2022/Sep/1663539331_new-project-2022-09-19t034158-861.jpg",
+            "image8": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/32/Dakhineshwar_Temple_beside_the_Hoogly%2C_West_Bengal.JPG/1200px-Dakhineshwar_Temple_beside_the_Hoogly%2C_West_Bengal.JPG",
+            "image9":"https://static.tnn.in/photo/msid-96367582,width-100,height-200,resizemode-75/96367582.jpg" ,
+            "image10": "https://thefederal.com/file/2023/01/iStock-1369987507.jpg",
+            "image11": "https://www.tusktravel.com/blog/wp-content/uploads/2022/04/Qutub-Minar-Delhi.jpg",
+            "image12": "https://img.myloview.com/stickers/close-up-of-a-fountain-and-india-gate-at-night-in-new-delhi-india-700-223772185.jpg",
+            "image13": "https://cdn.britannica.com/67/156667-050-62285333/Lotus-Temple-New-Delhi-India.jpg"
+            
+        }
+        
+    ]
+}

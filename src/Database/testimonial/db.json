@@ -1,0 +1,32 @@
+{
+    "testimonials": [
+      {
+        
+        "name": "David Johnson",
+        "role": "Marketing Executive",
+        "speech": "As a busy marketing executive, I needed a travel agency that could handle all the details of my vacation. Golden Wings Tour and Travels delivered beyond my expectations.",
+        "image": "img/testimonial-1.jpg"
+      },
+      {
+        
+        "name": "Sarah Thompson",
+        "role": "Financial Analyst",
+        "speech": "Golden Wings Tour and Travels provided both in abundance. Their team meticulously planned every aspect of my trip, ensuring that every penny was well spent. ",
+        "image": "img/testimonial-2.jpg"
+      },
+      {
+        
+        "name": "Harry Rodriguez",
+        "role": "Architect",
+        "speech": " Golden Wings Tour and Travels impressed me with their ability to curate unique and visually stunning travel experiences.They made sure I experienced the best of each destination.  ",
+        "image":"img/testimonial-3.jpg"
+      },
+      {
+        
+        "name": "John Smith",
+        "role": "Software Engineer",
+        "speech": "When I decided to take a vacation, I wanted to disconnect from technology and immerse myself in nature. Golden Wings Tour and Travels understood my need for an off-the-grid experience. ",
+        "image":"img/testimonial-4.jpg"
+      }
+    ]
+}

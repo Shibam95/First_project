@@ -1,0 +1,18 @@
+.pagination1 > span{
+    padding: 5px 15px;
+    border: 1px solid black;
+    cursor: pointer;
+
+
+}
+.pagination1{
+    display: flex;
+    justify-content: center;
+    margin-right: 1000px;
+}
+.pagination_selected{
+    background-color: lightgray;
+}
+.pagination_disable{
+    opacity: 0;
+}

@@ -1,0 +1,93 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+/* Navbar styles (add your own styles here) */
+
+/* Form styles */
+.main_bg {
+  background-image: url("https://img.freepik.com/free-vector/realistic-travel-background-with-elements_52683-77784.jpg?w=2000");
+  max-width: 100%;
+  max-height: fit-content;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.form {
+  max-width: 700px;
+  width: 100%; /* Adjust to take full width */
+  max-height: fit-content;
+  height: 100%;
+  padding: 20px;
+  margin: 20px;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.form-text {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.main-form {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.main-form div {
+  margin: 10px 0;
+}
+
+.main-form-input {
+  width: calc(50% ); /* Adjust the width as needed */
+  display: inline-block;
+  box-sizing: border-box;
+  padding-right: 50px;
+}
+
+
+
+.main-form-input label {
+  display: block;
+  color: #333;
+  font-size: 17px;
+  margin-bottom: 5px;
+}
+
+.main-form div input {
+  display: block;
+  width: 100%;
+  background: #f5f5f5;
+  border: 1px solid #ddd;
+  font-size: 16px;
+  color: #333;
+  outline: none;
+  padding: 10px;
+  border-radius: 5px;
+  margin-left: 10px;
+  transition: border-color 0.3s ease;
+}
+
+.main-form div input:focus {
+  border-color: #3498db;
+}
+
+.main-form div span {
+  color: #333;
+  font-size: 17px;
+}
+
+.submit:hover {
+  background-color: #2980b9;
+}

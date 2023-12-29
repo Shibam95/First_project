@@ -1,0 +1,600 @@
+{
+  "destinations": [
+    {
+      "id": "SIKKIM",
+      "destination": "SIKKIM",
+      "img": "https://northbengaltourism.com/blog/wp-content/uploads/2017/10/North-sikkim-big-1024x655.jpg",
+      "title":[
+        { 
+        "id": "northsikkim",
+        "date": 1,
+        "month": "JAN",
+        "Location": "NORTH SIKKIM",
+        "image": "https://sinbadbd.com/wp-content/uploads/2021/04/1568185634_Tsomgo_Lake.jpg.jpg",
+        "pack": "GANGTOK 3 N / 4 D",
+        "subtitle":[
+          {
+            "name": "GANGTOK 3 N / 4 D",
+            "tit":"If you are looking for a memorable Sikkim trip, holiday packages are the right choice for you. Golden Wings offers the widest range of customizable Puri tour to suit every kind of traveler.Bruges hotels can be pricey but there are plenty of B&Bs, guest houses, rentals and hostels for reasonable rates. Some of the hostels offer private rooms as well as the cheaper dormitories. Before booking note that some establishments include breakfast and others charge astronomical prices for the extra breakfast. You may also find yourself paying a surcharge if you stay only one night. Recommended budget accommodation in Bruges includes Bonobo Apart Hotel, Hotel Bla Bla, Hotel de Goezeput and St. Christopher’s Bauhaus, Woodside Bed and Breakfast, Snuffel Hostel and Lybeer Travelers Hostel. You can eat-for-cheap in Bruges by avoiding eateries on Markt Square and Burg Square. Be careful not to be charged for “free” bread put on your table or for tap water.",
+            "dur": "4 days",
+            "cost": "Rs70000",
+            "person": "3 persons",
+            "Location": "Sikkim",
+            "pic": "https://sinbadbd.com/wp-content/uploads/2021/04/1568185634_Tsomgo_Lake.jpg.jpg"
+          }
+        ]          
+      },
+      {
+        "id": "southsikkim",
+        "date": 2,
+        "month": "JUNE",
+        "Location": "SOUTH SIKKIM",
+        "image": "https://s3-ap-south-1.amazonaws.com/ab-comm/wp-content/uploads/2018/11/Places-To-Visit-In-Gangtok.jpg",
+        "pack": "SOUTH SIKKIM -GANGTOK 4 N/ 5 D",
+        "subtitle":[
+          {
+            "name": "SOUTH SIKKIM -GANGTOK 4 N/ 5 D",
+            "tit":"If you are looking for a memorable Sikkim trip, holiday packages are the right choice for you. Golden Wings offers the widest range of customizable Puri tour to suit every kind of traveler.Bruges hotels can be pricey but there are plenty of B&Bs, guest houses, rentals and hostels for reasonable rates. Some of the hostels offer private rooms as well as the cheaper dormitories. Before booking note that some establishments include breakfast and others charge astronomical prices for the extra breakfast. You may also find yourself paying a surcharge if you stay only one night. Recommended budget accommodation in Bruges includes Bonobo Apart Hotel, Hotel Bla Bla, Hotel de Goezeput and St. Christopher’s Bauhaus, Woodside Bed and Breakfast, Snuffel Hostel and Lybeer Travelers Hostel. You can eat-for-cheap in Bruges by avoiding eateries on Markt Square and Burg Square. Be careful not to be charged for “free” bread put on your table or for tap water.",
+            "dur": "5 days",
+            "cost": "Rs60000",
+            "person": "2 persons",
+            "Location": "Sikkim",
+            "pic":"https://s3-ap-south-1.amazonaws.com/ab-comm/wp-content/uploads/2018/11/Places-To-Visit-In-Gangtok.jpg"
+          }
+        ]
+      },
+      {
+        "id": "maingangtok",
+        "date": "13",
+        "month": "MAY",
+        "Location": "MAIN GANGTOK",
+        "image": "https://www.holidify.com/images/cmsuploads/compressed/Gangtok_ropeway_20181024141843.jpg",
+        "pack": "GANGTOK- NORTH SIKKIM & PELLING 8 N/ 9 D" ,
+        "subtitle":[
+          {
+            "name": "GANGTOK- NORTH SIKKIM & PELLING 8 N/ 9 D" ,
+            "tit":"If you are looking for a memorable Sikkim trip, holiday packages are the right choice for you. Golden Wings offers the widest range of customizable Puri tour to suit every kind of traveler.Bruges hotels can be pricey but there are plenty of B&Bs, guest houses, rentals and hostels for reasonable rates. Some of the hostels offer private rooms as well as the cheaper dormitories. Before booking note that some establishments include breakfast and others charge astronomical prices for the extra breakfast. You may also find yourself paying a surcharge if you stay only one night. Recommended budget accommodation in Bruges includes Bonobo Apart Hotel, Hotel Bla Bla, Hotel de Goezeput and St. Christopher’s Bauhaus, Woodside Bed and Breakfast, Snuffel Hostel and Lybeer Travelers Hostel. You can eat-for-cheap in Bruges by avoiding eateries on Markt Square and Burg Square. Be careful not to be charged for “free” bread put on your table or for tap water.",
+            "dur": "9",
+            "cost": "Rs130000",
+            "person": "4 persons",
+            "Location": "Sikkim",
+            "pic": "https://www.holidify.com/images/cmsuploads/compressed/Gangtok_ropeway_20181024141843.jpg"
+          }
+        ] 
+      }
+      ]
+      
+    },
+    {
+      "id": "KOCHI",
+      "destination": "KOCHI",
+      "img": "https://www.indiatourism.guide/wp-content/uploads/2020/05/kochi-backwaters-blogg.jpg",
+      "date": 5,
+      "month": "MAR",
+      "title":[
+        {
+        "id": "munar",
+        "date": 1,
+        "month": "JAN",
+        "Location": "MUNNAR",
+        "image": "https://www.picnicwale.com/attractions/assets/sightseeing/kochi-in-kerala-banner.jpg",
+        "pack": "3 DAYS 2 NIGHTS KERALA FAMILY HOLIDAY PACKAGE",
+        "subtitle":[
+          {
+            "name": "3 DAYS 2 NIGHTS KERALA FAMILY HOLIDAY PACKAGE",
+            "tit":"If you are looking for a memorable Kochi trip, holiday packages are the right choice for you. Golden Wings offers the widest range of customizable Puri tour to suit every kind of traveler.Bruges hotels can be pricey but there are plenty of B&Bs, guest houses, rentals and hostels for reasonable rates. Some of the hostels offer private rooms as well as the cheaper dormitories. Before booking note that some establishments include breakfast and others charge astronomical prices for the extra breakfast. You may also find yourself paying a surcharge if you stay only one night. Recommended budget accommodation in Bruges includes Bonobo Apart Hotel, Hotel Bla Bla, Hotel de Goezeput and St. Christopher’s Bauhaus, Woodside Bed and Breakfast, Snuffel Hostel and Lybeer Travelers Hostel. You can eat-for-cheap in Bruges by avoiding eateries on Markt Square and Burg Square. Be careful not to be charged for “free” bread put on your table or for tap water.",
+            "dur": "3 days",
+            "cost": "Rs30000",
+            "person": "2 persons",
+            "pic": "https://www.picnicwale.com/attractions/assets/sightseeing/kochi-in-kerala-banner.jpg"
+          }
+        ]
+      },
+       
+      {
+        "id": "kochi",
+        "date": 2,
+        "month": "JUNE",
+        "Location": "KOCHI",
+        "image": "https://media.radissonhotels.net/image/Destination-Pages/Localattraction/16256-118729-f63250747_3XL.jpg?impolicy=HomeHero",
+        "pack": "HONEYMOON PACKAGES 4 DAYS 3 NIGHT BUDGET HONEYMOON",
+        "subtitle":[
+          {
+            "name": "HONEYMOON PACKAGES 4 DAYS 3 NIGHT BUDGET HONEYMOON",
+            "tit":"If you are looking for a memorable Kochi trip, holiday packages are the right choice for you. Golden Wings offers the widest range of customizable Puri tour to suit every kind of traveler.Bruges hotels can be pricey but there are plenty of B&Bs, guest houses, rentals and hostels for reasonable rates. Some of the hostels offer private rooms as well as the cheaper dormitories. Before booking note that some establishments include breakfast and others charge astronomical prices for the extra breakfast. You may also find yourself paying a surcharge if you stay only one night. Recommended budget accommodation in Bruges includes Bonobo Apart Hotel, Hotel Bla Bla, Hotel de Goezeput and St. Christopher’s Bauhaus, Woodside Bed and Breakfast, Snuffel Hostel and Lybeer Travelers Hostel. You can eat-for-cheap in Bruges by avoiding eateries on Markt Square and Burg Square. Be careful not to be charged for “free” bread put on your table or for tap water.",
+            "dur": "4 days",
+            "cost": "Rs60000",
+            "person": "2 persons",
+            "pic": "https://media.radissonhotels.net/image/Destination-Pages/Localattraction/16256-118729-f63250747_3XL.jpg?impolicy=HomeHero"
+          }
+        ]
+      },
+        
+      {
+        "id": "ponnumathuruthu",
+        "date": "13",
+        "month": "MAY",
+        "Location": "PONNUMTHURUTHU ISLAND", 
+        "image": "https://www.revv.co.in/blogs/wp-content/uploads/2020/03/places-to-visit-in-kochi-1024x768.jpeg",
+        "pack": "5 DAYS 4 NIGHTS KERALA LUXURY ROMANTIC HONEYMOON PACKAGE",
+        "subtitle":[
+          {
+            "name": "5 DAYS 4 NIGHTS KERALA LUXURY ROMANTIC HONEYMOON PACKAGE",
+            "tit":"If you are looking for a memorable Kochi trip, holiday packages are the right choice for you. Golden Wings offers the widest range of customizable Puri tour to suit every kind of traveler.Bruges hotels can be pricey but there are plenty of B&Bs, guest houses, rentals and hostels for reasonable rates. Some of the hostels offer private rooms as well as the cheaper dormitories. Before booking note that some establishments include breakfast and others charge astronomical prices for the extra breakfast. You may also find yourself paying a surcharge if you stay only one night. Recommended budget accommodation in Bruges includes Bonobo Apart Hotel, Hotel Bla Bla, Hotel de Goezeput and St. Christopher’s Bauhaus, Woodside Bed and Breakfast, Snuffel Hostel and Lybeer Travelers Hostel. You can eat-for-cheap in Bruges by avoiding eateries on Markt Square and Burg Square. Be careful not to be charged for “free” bread put on your table or for tap water.",
+            "dur": "5 days",
+            "cost": "Rs90000",
+            "person": "3 persons",
+            "pic": "https://www.revv.co.in/blogs/wp-content/uploads/2020/03/places-to-visit-in-kochi-1024x768.jpeg"
+          }
+        ]
+      }
+      ]
+    },
+    {
+      "id": "MEGHALAYA",
+      "destination": "MEGHALAYA",
+      "img": "https://static.toiimg.com/photo/68332245/meghalaya-tourism.jpg?width=748&resize=4",
+      "date": 7,
+      "month": "AUG" ,
+      "title":[
+        {
+        "id": "northsikkim",
+        "date": 1,
+        "month": "JAN",
+        "Location": "SHILLONG",
+        "image": "https://fthmb.tqn.com/TkS5WWUj9HZnM_4YOLeza01p17E=/960x0/filters:no_upscale():max_bytes(150000):strip_icc()/GettyImages-452766395-58a40c3b5f9b58819c173f2c.jpg",
+        "pack": "5 Days Guwahati - Shillong - Mawlynnong - Dawki - Sohra - Laitlum",
+        "subtitle":[
+          {
+            "name": "5 Days Guwahati - Shillong - Mawlynnong - Dawki - Sohra - Laitlum",
+            "tit":"If you are looking for a memorable Meghalaya trip, holiday packages are the right choice for you. Golden Wings offers the widest range of customizable Puri tour to suit every kind of traveler.Bruges hotels can be pricey but there are plenty of B&Bs, guest houses, rentals and hostels for reasonable rates. Some of the hostels offer private rooms as well as the cheaper dormitories. Before booking note that some establishments include breakfast and others charge astronomical prices for the extra breakfast. You may also find yourself paying a surcharge if you stay only one night. Recommended budget accommodation in Bruges includes Bonobo Apart Hotel, Hotel Bla Bla, Hotel de Goezeput and St. Christopher’s Bauhaus, Woodside Bed and Breakfast, Snuffel Hostel and Lybeer Travelers Hostel. You can eat-for-cheap in Bruges by avoiding eateries on Markt Square and Burg Square. Be careful not to be charged for “free” bread put on your table or for tap water.",
+            "dur": "5 days",
+            "cost": "Rs130000",
+            "person": "4 persons",
+            "Location": "Meghalaya",
+            "pic": "https://fthmb.tqn.com/TkS5WWUj9HZnM_4YOLeza01p17E=/960x0/filters:no_upscale():max_bytes(150000):strip_icc()/GettyImages-452766395-58a40c3b5f9b58819c173f2c.jpg"
+          }
+        ]
+      },
+      {
+        "id": "dwarksuid",
+        "date": 2,
+        "month": "JUNE",
+        "Location": "DWARKSUID",
+        "image": "https://pickyourtrail.com/blog/wp-content/uploads/2020/07/nvr-endng-anupam-EUwzrxkJAAY-unsplash-2048x1245.jpg",
+        "pack": "6 Days Guwahati - Shillong - Dawki - Sohra - Nongriat - Dawki - Shnongpdeng",
+        "subtitle":[
+          {
+            "name": "6 Days Guwahati - Shillong - Dawki - Sohra - Nongriat - Dawki - Shnongpdeng",
+            "tit":"If you are looking for a memorable Meghalaya trip, holiday packages are the right choice for you. Golden Wings offers the widest range of customizable Puri tour to suit every kind of traveler.Bruges hotels can be pricey but there are plenty of B&Bs, guest houses, rentals and hostels for reasonable rates. Some of the hostels offer private rooms as well as the cheaper dormitories. Before booking note that some establishments include breakfast and others charge astronomical prices for the extra breakfast. You may also find yourself paying a surcharge if you stay only one night. Recommended budget accommodation in Bruges includes Bonobo Apart Hotel, Hotel Bla Bla, Hotel de Goezeput and St. Christopher’s Bauhaus, Woodside Bed and Breakfast, Snuffel Hostel and Lybeer Travelers Hostel. You can eat-for-cheap in Bruges by avoiding eateries on Markt Square and Burg Square. Be careful not to be charged for “free” bread put on your table or for tap water.",
+            "dur": "6 days",
+            "cost": "Rs120000",
+            "person": "3 persons",
+            "Location": "Meghalaya",
+            "pic": "https://pickyourtrail.com/blog/wp-content/uploads/2020/07/nvr-endng-anupam-EUwzrxkJAAY-unsplash-2048x1245.jpg"
+          }
+        ]
+      },
+    
+      { 
+        "id": "nongpoh",
+        "date": "13",
+        "month": "MAY",
+        "Location": "NONGPOH",       
+        "image": "https://dynamic.tourtravelworld.com/blog_images/12-famous-places-to-visit-in-meghalaya-20170330040011.jpg",
+        "pack": "8 Days Shillong – Sohra – Mawphlang – Mawlyngbna – Laitlum – Ialong - Nartiang",
+        "subtitle":[
+          {
+            "name": "8 Days Shillong – Sohra – Mawphlang – Mawlyngbna – Laitlum – Ialong - Nartiang",
+            "tit":"If you are looking for a memorable Meghalaya trip, holiday packages are the right choice for you. Golden Wings offers the widest range of customizable Puri tour to suit every kind of traveler.Bruges hotels can be pricey but there are plenty of B&Bs, guest houses, rentals and hostels for reasonable rates. Some of the hostels offer private rooms as well as the cheaper dormitories. Before booking note that some establishments include breakfast and others charge astronomical prices for the extra breakfast. You may also find yourself paying a surcharge if you stay only one night. Recommended budget accommodation in Bruges includes Bonobo Apart Hotel, Hotel Bla Bla, Hotel de Goezeput and St. Christopher’s Bauhaus, Woodside Bed and Breakfast, Snuffel Hostel and Lybeer Travelers Hostel. You can eat-for-cheap in Bruges by avoiding eateries on Markt Square and Burg Square. Be careful not to be charged for “free” bread put on your table or for tap water.",
+            "dur": "8 days",
+            "cost": "Rs170000",
+            "person": "2 persons",
+            "Location": "Meghalaya",
+            "pic": "https://dynamic.tourtravelworld.com/blog_images/12-famous-places-to-visit-in-meghalaya-20170330040011.jpg"
+          }
+        ]
+      }
+    ]        
+    },
+    
+    {
+      "id": "MUMBAI",
+      "destination": "MUMBAI",
+      "img": "https://www.visittnt.com/blog/wp-content/uploads/2018/07/Mumbai.jpg",
+      "date": 21,
+      "month": "SEP",     
+"title":[
+  { 
+    "id": "gateway",
+    "date": 1,
+    "month": "JAN",
+   "Location": "GATEWAY OF INDIA",
+   "image": "https://www.carjee.com/blog/wp-content/uploads/2015/10/bombay-2092174-9.jpg",
+   "pack": "Elephanta Caves",
+   "subtitle":[
+    {
+      "name": "Elephanta Caves",
+      "tit":"If you are looking for a memorable Mumbai trip, Agra holiday packages are the right choice for you. Golden Wings offers the widest range of customizable Puri tour to suit every kind of traveler.Bruges hotels can be pricey but there are plenty of B&Bs, guest houses, rentals and hostels for reasonable rates. Some of the hostels offer private rooms as well as the cheaper dormitories. Before booking note that some establishments include breakfast and others charge astronomical prices for the extra breakfast. You may also find yourself paying a surcharge if you stay only one night. Recommended budget accommodation in Bruges includes Bonobo Apart Hotel, Hotel Bla Bla, Hotel de Goezeput and St. Christopher’s Bauhaus, Woodside Bed and Breakfast, Snuffel Hostel and Lybeer Travelers Hostel. You can eat-for-cheap in Bruges by avoiding eateries on Markt Square and Burg Square. Be careful not to be charged for “free” bread put on your table or for tap water.",
+      "dur": "3 days",
+      "cost": "Rs60000",
+      "person": "2 persons",
+      "Location": "mumbai",
+      "pic": "https://www.carjee.com/blog/wp-content/uploads/2015/10/bombay-2092174-9.jpg"
+    }
+  ]
+ },
+
+
+ {
+  "id": "flora",
+  "date": 2,
+  "month": "JUNE",
+   "Location": "FLORA FOUNTAIN",
+   "image": "https://www.hotelsmumbaiindia.com/userfiles/images/Heritage%20places%20in%20mumbai.jpg",
+   "pack": "Haji Ali Dargah",
+   "subtitle":[
+    {
+      "name": "Haji Ali Dargah",
+      "tit":"If you are looking for a memorable Mumbai trip, Agra holiday packages are the right choice for you. Golden Wings offers the widest range of customizable Puri tour to suit every kind of traveler.Bruges hotels can be pricey but there are plenty of B&Bs, guest houses, rentals and hostels for reasonable rates. Some of the hostels offer private rooms as well as the cheaper dormitories. Before booking note that some establishments include breakfast and others charge astronomical prices for the extra breakfast. You may also find yourself paying a surcharge if you stay only one night. Recommended budget accommodation in Bruges includes Bonobo Apart Hotel, Hotel Bla Bla, Hotel de Goezeput and St. Christopher’s Bauhaus, Woodside Bed and Breakfast, Snuffel Hostel and Lybeer Travelers Hostel. You can eat-for-cheap in Bruges by avoiding eateries on Markt Square and Burg Square. Be careful not to be charged for “free” bread put on your table or for tap water.",
+      "dur": "2 days",
+      "cost": "Rs30000",
+      "person": "4 persons",
+      "Location": "Mumbai",
+      "pic": "https://www.hotelsmumbaiindia.com/userfiles/images/Heritage%20places%20in%20mumbai.jpg"
+    }
+  ]
+ },
+ { 
+  "id": "marine",
+   "date": "13",
+   "month": "MAY",
+   "Location": "MARINE DRIVE",
+   "image": "https://static.toiimg.com/thumb/width-800,height-600,msid-46479277.cms",
+   "pack": "Marine Drive",
+   "subtitle":[
+    {
+      "name": "Marine Drive",
+      "tit":"If you are looking for a memorable Mumbai trip, Agra holiday packages are the right choice for you. Golden Wings offers the widest range of customizable Puri tour to suit every kind of traveler.Bruges hotels can be pricey but there are plenty of B&Bs, guest houses, rentals and hostels for reasonable rates. Some of the hostels offer private rooms as well as the cheaper dormitories. Before booking note that some establishments include breakfast and others charge astronomical prices for the extra breakfast. You may also find yourself paying a surcharge if you stay only one night. Recommended budget accommodation in Bruges includes Bonobo Apart Hotel, Hotel Bla Bla, Hotel de Goezeput and St. Christopher’s Bauhaus, Woodside Bed and Breakfast, Snuffel Hostel and Lybeer Travelers Hostel. You can eat-for-cheap in Bruges by avoiding eateries on Markt Square and Burg Square. Be careful not to be charged for “free” bread put on your table or for tap water.",
+      "dur": "4 days",
+      "cost": "Rs50000",
+      "person": "4 persons",
+      "Location": "Mumbai",
+      "pic": "https://static.toiimg.com/thumb/width-800,height-600,msid-46479277.cms"
+    }
+  ]
+ }
+]
+    },
+    {
+      "id": "RAJASTHAN",
+      "destination": "RAJASTHAN",
+      "img": "https://www.akshartours.com/wp-content/uploads/2019/09/hawa-mahal-palace-of-the-winds-jaipur-rajasthan-H7PVW5Y-scaled.jpg",
+      "date": 3,
+      "month": "FEB",
+
+      "title":[
+  {
+    "id": "udaipur",
+    "date": 1,
+    "month": "JAN",
+    "Location": "UDAIPUR",
+    "image": "https://i1.wp.com/earthnworld.com/wp-content/uploads/2018/03/Hawa-Mahal.jpg?fit=1280%2C839&ssl=1",
+    "pack": "Royal Rajasthan Tour Package 8 N / 9 D",
+    "subtitle":[
+      {
+        "name": "Royal Rajasthan Tour Package 8 N / 9 D",
+        "tit":"If you are looking for a memorable Rajasthan trip, Agra holiday packages are the right choice for you. Golden Wings offers the widest range of customizable Puri tour to suit every kind of traveler.Bruges hotels can be pricey but there are plenty of B&Bs, guest houses, rentals and hostels for reasonable rates. Some of the hostels offer private rooms as well as the cheaper dormitories. Before booking note that some establishments include breakfast and others charge astronomical prices for the extra breakfast. You may also find yourself paying a surcharge if you stay only one night. Recommended budget accommodation in Bruges includes Bonobo Apart Hotel, Hotel Bla Bla, Hotel de Goezeput and St. Christopher’s Bauhaus, Woodside Bed and Breakfast, Snuffel Hostel and Lybeer Travelers Hostel. You can eat-for-cheap in Bruges by avoiding eateries on Markt Square and Burg Square. Be careful not to be charged for “free” bread put on your table or for tap water.",
+        "dur": "9 days",
+        "cost": "Rs230000",
+        "person": "4 persons",
+        "Location": "RAJASTHAN",
+        "pic": "https://i1.wp.com/earthnworld.com/wp-content/uploads/2018/03/Hawa-Mahal.jpg?fit=1280%2C839&ssl=1"
+      }
+    ]
+  },
+
+  { 
+    "id": "gurusikhar",
+    "date": 2,
+    "month": "JUNE",
+    "Location": "GURUSIKHAR",
+    "image": "https://media.cntraveller.in/wp-content/uploads/2018/12/nahargarh-fort-view-shutterstock_512605621.jpg",
+    "pack": "Majestic Rajasthan Tour Package 3 N / 4 D",
+    "subtitle":[
+      {
+        "name": "Majestic Rajasthan Tour Package 3 N / 4 D",
+        "tit":"If you are looking for a memorable Rajasthan trip, Agra holiday packages are the right choice for you. Golden Wings offers the widest range of customizable Puri tour to suit every kind of traveler.Bruges hotels can be pricey but there are plenty of B&Bs, guest houses, rentals and hostels for reasonable rates. Some of the hostels offer private rooms as well as the cheaper dormitories. Before booking note that some establishments include breakfast and others charge astronomical prices for the extra breakfast. You may also find yourself paying a surcharge if you stay only one night. Recommended budget accommodation in Bruges includes Bonobo Apart Hotel, Hotel Bla Bla, Hotel de Goezeput and St. Christopher’s Bauhaus, Woodside Bed and Breakfast, Snuffel Hostel and Lybeer Travelers Hostel. You can eat-for-cheap in Bruges by avoiding eateries on Markt Square and Burg Square. Be careful not to be charged for “free” bread put on your table or for tap water.",
+        "dur": "4 days",
+        "cost": "Rs130000",
+        "person": "4 persons",
+        "Location": "RAJASTHAN",
+        "pic": "https://media.cntraveller.in/wp-content/uploads/2018/12/nahargarh-fort-view-shutterstock_512605621.jpg"
+      }
+    ]
+
+  },
+  {  
+    "id": "jaisalmer",
+    "date": "13",
+    "month": "MAY",
+    "Location": "JAISALMER",
+    "image": "https://www.picnicwale.com/attractions/assets/sightseeing/bikaner-camel-festival-in-rajasthan-barnner.jpg",
+    "pack": "Rajasthan Cultural Tour Package 4 N / 5 D",
+    "subtitle":[
+      {
+        "name": "Rajasthan Cultural Tour Package 4 N / 5 D",
+        "tit":"If you are looking for a memorable Rajasthan trip, Agra holiday packages are the right choice for you. Golden Wings offers the widest range of customizable Puri tour to suit every kind of traveler.Bruges hotels can be pricey but there are plenty of B&Bs, guest houses, rentals and hostels for reasonable rates. Some of the hostels offer private rooms as well as the cheaper dormitories. Before booking note that some establishments include breakfast and others charge astronomical prices for the extra breakfast. You may also find yourself paying a surcharge if you stay only one night. Recommended budget accommodation in Bruges includes Bonobo Apart Hotel, Hotel Bla Bla, Hotel de Goezeput and St. Christopher’s Bauhaus, Woodside Bed and Breakfast, Snuffel Hostel and Lybeer Travelers Hostel. You can eat-for-cheap in Bruges by avoiding eateries on Markt Square and Burg Square. Be careful not to be charged for “free” bread put on your table or for tap water.",
+        "dur": "4 days",
+        "cost": "Rs80000",
+        "person": "2 persons",
+        "Location": "RAJASTHAN",
+        "pic": "https://www.picnicwale.com/attractions/assets/sightseeing/bikaner-camel-festival-in-rajasthan-barnner.jpg"
+      }
+    ]
+  }
+]
+    },
+   
+    
+    {
+      "id": "AGRA",
+      "destination": "AGRA",
+      "img": "https://downloadhdwallpapers.in/wp-content/uploads/2018/02/Taj-Mahal-Agra-Indian--1920x1440.jpg",
+      "title":[
+        {
+          "id": "tajmahal",
+          "date": 1,
+          "month": "JAN",
+          "Location": "TAJMAHAL",
+          "image": "http://4.bp.blogspot.com/-nU-IhMyfA1U/UFvsXTS-tVI/AAAAAAAACcI/kIlRDQ1V_Zc/s1600/Taj+Mahal.JPG",
+          "pack": "Delhi Mathura Vrindavan Agra Tour Package 3 Days - Sri Krishna-Balaram Mandi",
+          "subtitle":[
+            {
+              "name": "Delhi Mathura Vrindavan Agra Tour Package 3 Days - Sri Krishna-Balaram Mandi",
+              "tit":"If you are looking for a memorable Goa trip, Agra holiday packages are the right choice for you. Golden Wings offers the widest range of customizable Puri tour to suit every kind of traveler.Bruges hotels can be pricey but there are plenty of B&Bs, guest houses, rentals and hostels for reasonable rates. Some of the hostels offer private rooms as well as the cheaper dormitories. Before booking note that some establishments include breakfast and others charge astronomical prices for the extra breakfast. You may also find yourself paying a surcharge if you stay only one night. Recommended budget accommodation in Bruges includes Bonobo Apart Hotel, Hotel Bla Bla, Hotel de Goezeput and St. Christopher’s Bauhaus, Woodside Bed and Breakfast, Snuffel Hostel and Lybeer Travelers Hostel. You can eat-for-cheap in Bruges by avoiding eateries on Markt Square and Burg Square. Be careful not to be charged for “free” bread put on your table or for tap water.",
+              "dur": "3 days",
+              "cost": "Rs50000",
+              "person": "4 persons",
+              "Location": "Agra",
+              "pic": "http://4.bp.blogspot.com/-nU-IhMyfA1U/UFvsXTS-tVI/AAAAAAAACcI/kIlRDQ1V_Zc/s1600/Taj+Mahal.JPG"
+            }
+          ]
+        },
+  
+          {
+            "id": "fatehpur",
+            "date": 2,
+            "month": "JUNE",
+            "Location": "FATEHPUR SIKRI",
+            "image": "https://www.planetware.com/wpimages/2019/09/india-agra-top-attractions-akbars-mausoleum.jpg",
+            "pack": "Delhi Agra 2 Days Tour Package - Taj Mahal",
+            "subtitle":[
+              {
+                "name": "Delhi Agra 2 Days Tour Package - Taj Mahal",
+                "tit":"If you are looking for a memorable Goa trip, Agra holiday packages are the right choice for you. Golden Wings offers the widest range of customizable Puri tour to suit every kind of traveler.Bruges hotels can be pricey but there are plenty of B&Bs, guest houses, rentals and hostels for reasonable rates. Some of the hostels offer private rooms as well as the cheaper dormitories. Before booking note that some establishments include breakfast and others charge astronomical prices for the extra breakfast. You may also find yourself paying a surcharge if you stay only one night. Recommended budget accommodation in Bruges includes Bonobo Apart Hotel, Hotel Bla Bla, Hotel de Goezeput and St. Christopher’s Bauhaus, Woodside Bed and Breakfast, Snuffel Hostel and Lybeer Travelers Hostel. You can eat-for-cheap in Bruges by avoiding eateries on Markt Square and Burg Square. Be careful not to be charged for “free” bread put on your table or for tap water.",
+                "dur": "2 days",
+                "cost": "Rs40000",
+                "person": "4 persons",
+                "Location": "Agra",
+                "pic": "https://www.planetware.com/wpimages/2019/09/india-agra-top-attractions-akbars-mausoleum.jpg"
+              }
+            ]
+          },
+        { 
+          "id": "agrafort",
+          "date": 4,
+          "month": "APR",
+          "Location": "AGRAFORT",
+          "image": "https://www.visittnt.com/blog/wp-content/uploads/2016/07/Agra-Fort.jpg",
+          "pack": "Delhi Agra Jaipur Tour Package 4 Days",
+          "subtitle":[
+            {
+              "name": "Delhi Agra Jaipur Tour Package 4 Days",
+              "tit":"If you are looking for a memorable Goa trip, Agra holiday packages are the right choice for you. Golden Wings offers the widest range of customizable Puri tour to suit every kind of traveler.Bruges hotels can be pricey but there are plenty of B&Bs, guest houses, rentals and hostels for reasonable rates. Some of the hostels offer private rooms as well as the cheaper dormitories. Before booking note that some establishments include breakfast and others charge astronomical prices for the extra breakfast. You may also find yourself paying a surcharge if you stay only one night. Recommended budget accommodation in Bruges includes Bonobo Apart Hotel, Hotel Bla Bla, Hotel de Goezeput and St. Christopher’s Bauhaus, Woodside Bed and Breakfast, Snuffel Hostel and Lybeer Travelers Hostel. You can eat-for-cheap in Bruges by avoiding eateries on Markt Square and Burg Square. Be careful not to be charged for “free” bread put on your table or for tap water.",
+              "dur": "2 days",
+              "cost": "Rs30000",
+              "person": "3 persons",
+              "Location": "Agra",
+              "pic": "https://www.visittnt.com/blog/wp-content/uploads/2016/07/Agra-Fort.jpg"
+            }
+          ]
+        }
+      ]
+    },  
+    
+    {
+      "id": "GOA",
+      "destination": "GOA",
+      "img": "https://images.thrillophilia.com/image/upload/s--EhWH2JRb--/c_fill,f_auto,fl_strip_profile,g_auto,h_600,q_auto,w_975/v1/images/photos/000/115/737/original/1516998283_0_139c88_4f6e83d3_orig.jpg.jpg?1516998283",  
+      "title":
+      [
+        {
+        "id": "CLANGUTE",
+        "date": 1,
+        "month": "JAN",
+        "Location": "CLANGUTE BEACH",
+        "image": "https://www.akshartours.com/wp-content/uploads/2020/07/Panaji-Beach.jpg",
+        "pack": "3 Days Goa Tour Package From Mumbai by Car",
+        "subtitle":[
+          {
+            "name": "3 Days Goa Tour Package From Mumbai by Car",
+            "tit":"If you are looking for a memorable Goa trip, Darjeeling holiday packages are the right choice for you. Golden Wings offers the widest range of customizable Puri tour to suit every kind of traveler.Bruges hotels can be pricey but there are plenty of B&Bs, guest houses, rentals and hostels for reasonable rates. Some of the hostels offer private rooms as well as the cheaper dormitories. Before booking note that some establishments include breakfast and others charge astronomical prices for the extra breakfast. You may also find yourself paying a surcharge if you stay only one night. Recommended budget accommodation in Bruges includes Bonobo Apart Hotel, Hotel Bla Bla, Hotel de Goezeput and St. Christopher’s Bauhaus, Woodside Bed and Breakfast, Snuffel Hostel and Lybeer Travelers Hostel. You can eat-for-cheap in Bruges by avoiding eateries on Markt Square and Burg Square. Be careful not to be charged for “free” bread put on your table or for tap water.",
+            "dur": "3 days",
+            "cost": "Rs90000",
+            "person": "4 persons",
+            "Location": "Goa",
+            "pic": "https://www.akshartours.com/wp-content/uploads/2020/07/Panaji-Beach.jpg"
+          }
+        ]
+      },
+        {
+        "id": "fort",
+        "date": 22,
+        "month": "OCT",
+        "Location": "FORT AGUADA",
+        "image": "https://www.tourmyindia.com/blog/wp-content/uploads/2016/08/Mangeshi-temple1.png",
+        "pack": "Goa Tour Package For Friends",
+        "subtitle":[
+          {
+            "name": "Goa Tour Package For Friends",
+            "tit":"If you are looking for a memorable Goa trip, Darjeeling holiday packages are the right choice for you. Golden Wings offers the widest range of customizable Puri tour to suit every kind of traveler.Bruges hotels can be pricey but there are plenty of B&Bs, guest houses, rentals and hostels for reasonable rates. Some of the hostels offer private rooms as well as the cheaper dormitories. Before booking note that some establishments include breakfast and others charge astronomical prices for the extra breakfast. You may also find yourself paying a surcharge if you stay only one night. Recommended budget accommodation in Bruges includes Bonobo Apart Hotel, Hotel Bla Bla, Hotel de Goezeput and St. Christopher’s Bauhaus, Woodside Bed and Breakfast, Snuffel Hostel and Lybeer Travelers Hostel. You can eat-for-cheap in Bruges by avoiding eateries on Markt Square and Burg Square. Be careful not to be charged for “free” bread put on your table or for tap water.",
+            "dur": "2 days",
+            "cost": "Rs50000",
+            "person": "4 prsons",
+            "Location": "Goa",
+            "pic": "https://www.tourmyindia.com/blog/wp-content/uploads/2016/08/Mangeshi-temple1.png"
+          }
+        ]
+      },
+       { 
+        "id": "anjuna",
+        "date": 7,
+        "month": "JUNE",
+        "Location": "ANJUNA BEACH",     
+        "image": "https://images.thrillophilia.com/image/upload/s--0Mur1Hzm--/c_fill,f_auto,fl_strip_profile,h_600,q_auto,w_975/v1/images/photos/000/253/680/original/1588862815_beach.jpg.jpg?1588862815",
+        "pack": "Luxury Weekend Tour to North Goa",
+        "subtitle":[
+          {
+            "name": "Luxury Weekend Tour to North Goa",
+            "tit":"If you are looking for a memorable Goa trip, Darjeeling holiday packages are the right choice for you. Golden Wings offers the widest range of customizable Puri tour to suit every kind of traveler.Bruges hotels can be pricey but there are plenty of B&Bs, guest houses, rentals and hostels for reasonable rates. Some of the hostels offer private rooms as well as the cheaper dormitories. Before booking note that some establishments include breakfast and others charge astronomical prices for the extra breakfast. You may also find yourself paying a surcharge if you stay only one night. Recommended budget accommodation in Bruges includes Bonobo Apart Hotel, Hotel Bla Bla, Hotel de Goezeput and St. Christopher’s Bauhaus, Woodside Bed and Breakfast, Snuffel Hostel and Lybeer Travelers Hostel. You can eat-for-cheap in Bruges by avoiding eateries on Markt Square and Burg Square. Be careful not to be charged for “free” bread put on your table or for tap water.",
+            "dur": "4 days",
+            "cost": "Rs30000",
+            "person": "2 persons",
+            "Location": "Goa",
+            "pic": "https://images.thrillophilia.com/image/upload/s--0Mur1Hzm--/c_fill,f_auto,fl_strip_profile,h_600,q_auto,w_975/v1/images/photos/000/253/680/original/1588862815_beach.jpg.jpg?1588862815"
+          }
+        ]
+      }
+    ]
+    },
+    {
+      "id": "DARJEELING",
+      "destination": "DARJEELING",
+      "img": "https://i.ytimg.com/vi/DCq7VUksItY/maxresdefault.jpg",        
+      "title": [
+        {
+          "id": "lamahata",
+          "date": 1,
+          "month": "JAN",
+        "Location": "LAMAHATTA",
+        "image": "https://i.pinimg.com/originals/11/04/49/1104494ef41f723d64901ea6088bf4c1.jpg",
+        "pack": "PELLING-DARJEELING 6 N/ 7 D",
+        "subtitle":[
+          {
+            "name": "PELLING-DARJEELING 6 N/ 7 D",
+            "tit":"If you are looking for a memorable Odisha trip, Darjeeling holiday packages are the right choice for you. Golden Wings offers the widest range of customizable Puri tour to suit every kind of traveler.Bruges hotels can be pricey but there are plenty of B&Bs, guest houses, rentals and hostels for reasonable rates. Some of the hostels offer private rooms as well as the cheaper dormitories. Before booking note that some establishments include breakfast and others charge astronomical prices for the extra breakfast. You may also find yourself paying a surcharge if you stay only one night. Recommended budget accommodation in Bruges includes Bonobo Apart Hotel, Hotel Bla Bla, Hotel de Goezeput and St. Christopher’s Bauhaus, Woodside Bed and Breakfast, Snuffel Hostel and Lybeer Travelers Hostel. You can eat-for-cheap in Bruges by avoiding eateries on Markt Square and Burg Square. Be careful not to be charged for “free” bread put on your table or for tap water.",
+            "dur": "6 days",
+            "cost": "Rs34000",
+            "person": "2 persons",
+            "Location": "Darjeeling",
+            "pic": "https://i.pinimg.com/originals/11/04/49/1104494ef41f723d64901ea6088bf4c1.jpg"
+          }
+        ]
+        },
+        {
+          "id": "rock",
+          "date": 22,
+          "month": "OCT",
+          "Location": "ROCK GARDEN",
+          "image": "https://i.pinimg.com/originals/11/04/49/1104494ef41f723d64901ea6088bf4c1.jpg",
+          "pack": "DARJEELING & KALIMPONG 4 N /5 D",
+          "subtitle":[
+            {
+              "name": "DARJEELING & KALIMPONG 4 N /5 D",
+              "tit":"If you are looking for a memorable Odisha trip, Darjeeling holiday packages are the right choice for you. Golden Wings offers the widest range of customizable Puri tour to suit every kind of traveler.Bruges hotels can be pricey but there are plenty of B&Bs, guest houses, rentals and hostels for reasonable rates. Some of the hostels offer private rooms as well as the cheaper dormitories. Before booking note that some establishments include breakfast and others charge astronomical prices for the extra breakfast. You may also find yourself paying a surcharge if you stay only one night. Recommended budget accommodation in Bruges includes Bonobo Apart Hotel, Hotel Bla Bla, Hotel de Goezeput and St. Christopher’s Bauhaus, Woodside Bed and Breakfast, Snuffel Hostel and Lybeer Travelers Hostel. You can eat-for-cheap in Bruges by avoiding eateries on Markt Square and Burg Square. Be careful not to be charged for “free” bread put on your table or for tap water.",
+              "dur": "4 days",
+              "cost": "Rs40000",
+              "person": "4 persons",
+              "Location": "Darjeeling",
+              "pic": "https://i.pinimg.com/originals/11/04/49/1104494ef41f723d64901ea6088bf4c1.jpg"
+            }
+          ]
+        },
+        {
+          "id": "tiger",
+          "date": 12,
+          "month": "AUG",
+          "Location": "TIGER HILL",
+          "image": "https://i.ytimg.com/vi/DCq7VUksItY/maxresdefault.jpg",
+          "pack": "DARJEELING 3 N /4 D",
+          "subtitle":[
+            {
+              "name": "DARJEELING 3 N /4 D",
+              "tit":"If you are looking for a memorable Darjeeling trip, Odisha holiday packages are the right choice for you. Golden Wings offers the widest range of customizable Puri tour to suit every kind of traveler.Bruges hotels can be pricey but there are plenty of B&Bs, guest houses, rentals and hostels for reasonable rates. Some of the hostels offer private rooms as well as the cheaper dormitories. Before booking note that some establishments include breakfast and others charge astronomical prices for the extra breakfast. You may also find yourself paying a surcharge if you stay only one night. Recommended budget accommodation in Bruges includes Bonobo Apart Hotel, Hotel Bla Bla, Hotel de Goezeput and St. Christopher’s Bauhaus, Woodside Bed and Breakfast, Snuffel Hostel and Lybeer Travelers Hostel. You can eat-for-cheap in Bruges by avoiding eateries on Markt Square and Burg Square. Be careful not to be charged for “free” bread put on your table or for tap water.",
+              "dur": "3 days",
+              "cost": "Rs30000",
+              "person": "4 persons",
+              "Location": "Darjeeling",
+              "pic": "https://i.ytimg.com/vi/DCq7VUksItY/maxresdefault.jpg"
+            }
+          ]
+        }
+      ]    
+    },
+     {
+      "id": "KOLKATA",
+      "destination": "KOLKATA",
+      "img": "https://images.pexels.com/photos/14510145/pexels-photo-14510145.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",    
+      "title":[
+    {
+    "id": "victoria",
+    "date": 1,
+    "month": "JAN",
+    "Location": "VICTORIA MEMORIAL",
+    "image": "https://www.oyorooms.com/travel-guide/wp-content/uploads/2019/01/Victoria-Memorial.jpg",
+    "pack": "Kolkata - Sounds and Sights - Private Full Day City Tour",
+    "subtitle":[
+      {
+        "name": "Kolkata - Sounds and Sights - Private Full Day City Tour",
+        "tit":"If you are looking for a memorable Goa trip, Kolkata holiday packages are the right choice for you. Golden Wings offers the widest range of customizable Puri tour to suit every kind of traveler.Bruges hotels can be pricey but there are plenty of B&Bs, guest houses, rentals and hostels for reasonable rates. Some of the hostels offer private rooms as well as the cheaper dormitories. Before booking note that some establishments include breakfast and others charge astronomical prices for the extra breakfast. You may also find yourself paying a surcharge if you stay only one night. Recommended budget accommodation in Bruges includes Bonobo Apart Hotel, Hotel Bla Bla, Hotel de Goezeput and St. Christopher’s Bauhaus, Woodside Bed and Breakfast, Snuffel Hostel and Lybeer Travelers Hostel. You can eat-for-cheap in Bruges by avoiding eateries on Markt Square and Burg Square. Be careful not to be charged for “free” bread put on your table or for tap water.",
+        "dur": "3b days",
+        "cost": "Rs30000",
+        "person": "4 persons",
+        "Location": "kolkata",
+        "pic": "https://www.oyorooms.com/travel-guide/wp-content/uploads/2019/01/Victoria-Memorial.jpg"
+      }
+    ]
+    },
+    {
+      "id": "belurmath",
+      "date": 3,
+      "month": "JULY",
+      "Location": "BELURMATH",
+      "image": "https://www.tripsavvy.com/thmb/cQai8rVBJxpRDh2JGXxoEhjGwGw=/1250x0/filters:no_upscale():max_bytes(150000):strip_icc()/GettyImages-515828728-5b923ad9c9e77c0050daf70a.jpg",
+      "pack": "Magic Hour Tour 3 N / 4 D",
+      "subtitle":[
+        {
+          "name": "Magic Hour Tour 3 N / 4 D",
+          "tit":"If you are looking for a memorable Goa trip, Kolkata holiday packages are the right choice for you. Golden Wings offers the widest range of customizable Puri tour to suit every kind of traveler.Bruges hotels can be pricey but there are plenty of B&Bs, guest houses, rentals and hostels for reasonable rates. Some of the hostels offer private rooms as well as the cheaper dormitories. Before booking note that some establishments include breakfast and others charge astronomical prices for the extra breakfast. You may also find yourself paying a surcharge if you stay only one night. Recommended budget accommodation in Bruges includes Bonobo Apart Hotel, Hotel Bla Bla, Hotel de Goezeput and St. Christopher’s Bauhaus, Woodside Bed and Breakfast, Snuffel Hostel and Lybeer Travelers Hostel. You can eat-for-cheap in Bruges by avoiding eateries on Markt Square and Burg Square. Be careful not to be charged for “free” bread put on your table or for tap water.",
+          "dur": "4 days",
+          "cost": "Rs30000",
+          "person": "4 persons",
+          "Location": "kolkata",
+          "pic": "https://www.tripsavvy.com/thmb/cQai8rVBJxpRDh2JGXxoEhjGwGw=/1250x0/filters:no_upscale():max_bytes(150000):strip_icc()/GettyImages-515828728-5b923ad9c9e77c0050daf70a.jpg"
+        }
+      ]
+    },
+    {
+      "id": "dakshineshwar",
+      "date": 2,
+      "month": "FEB",
+      "Location": "DAKSHINESHWAR",
+      "image": "https://www.swantour.com/blogs/wp-content/uploads/2018/02/Places-to-Visit-in-Kolkata.jpg",
+      "pack": "Private Calcutta Tour",
+      "subtitle":[
+        {
+          "name": "Private Calcutta Tour",
+          "tit":"If you are looking for a memorable Goa trip, Kolkata holiday packages are the right choice for you. Golden Wings offers the widest range of customizable Puri tour to suit every kind of traveler.Bruges hotels can be pricey but there are plenty of B&Bs, guest houses, rentals and hostels for reasonable rates. Some of the hostels offer private rooms as well as the cheaper dormitories. Before booking note that some establishments include breakfast and others charge astronomical prices for the extra breakfast. You may also find yourself paying a surcharge if you stay only one night. Recommended budget accommodation in Bruges includes Bonobo Apart Hotel, Hotel Bla Bla, Hotel de Goezeput and St. Christopher’s Bauhaus, Woodside Bed and Breakfast, Snuffel Hostel and Lybeer Travelers Hostel. You can eat-for-cheap in Bruges by avoiding eateries on Markt Square and Burg Square. Be careful not to be charged for “free” bread put on your table or for tap water.",
+          "dur": "6 days",
+          "cost": "Rs30000",
+          "person": "4 persons",
+          "Location": "kolkata",
+          "pic": "https://www.swantour.com/blogs/wp-content/uploads/2018/02/Places-to-Visit-in-Kolkata.jpg"
+        }
+      ]
+    }
+  ]
+    }
+  ]
+}
