@@ -197,64 +197,104 @@ const Package = () => {
                                 }
                                 
                             </div>
-                           
-                           
-                          {/* Pagination controls */}
-                          <span style={{marginLeft:"200px"}}>
-                                 
-                                 
-                          {currentPage > 1 && (
-                              <button style={{
-                                  margin: '5px',
-                                  padding: '8px 12px',
-                                  fontSize: '14px',
-                                  fontWeight:   'normal',
-                              
-                                  color:  '#007bff' ,
-                                  border: '1px solid #007bff',
-                                  borderRadius: '4px',
-                                  cursor: 'pointer',
-                                }}  onClick={() => setCurrentPage(currentPage - 1)}>
-                                Previous
-                              </button>
-                            )}
+                            {/* Pagination controls */}
+                            <span style={{ marginLeft: "200px" }}>
+                              {currentPage > 1 && (
+                                <button
+                                  style={{
+                                    margin: "5px",
+                                    padding: "8px 12px",
+                                    fontSize: "14px",
+                                    fontWeight: "normal",
+                                    color: "#007bff",
+                                    border: "1px solid #007bff",
+                                    borderRadius: "4px",
+                                    cursor: "pointer",
+                                  }}
+                                  onClick={() => setCurrentPage(currentPage - 1)}
+                                >
+                                  Previous
+                                </button>
+                              )}
                             
-
-                          {Array.from({ length: totalPages }, (_, index) => index + 1).map((page) => (
-                            <button   style={{
-                              margin: '5px',
-                              padding: '8px 12px',
-                              fontSize: '14px',
-                              fontWeight: currentPage === page ? 'bold' : 'normal',
-                              backgroundColor: currentPage === page ? '#007bff' : '#fff',
-                              color: currentPage === page ? '#fff' : '#007bff',
-                              border: '1px solid #007bff',
-                              borderRadius: '4px',
-                              cursor: 'pointer',
-                            }} key={page} onClick={() => setCurrentPage(page)}>
-                              {page}
-                            </button>
-
+                              {Array.from({ length: totalPages }, (_, index) => index + 1).map((page) => (
+                                <button
+                                  style={{
+                                    margin: "5px",
+                                    padding: "8px 12px",
+                                    fontSize: "14px",
+                                    fontWeight: currentPage === page ? "bold" : "normal",
+                                    backgroundColor: currentPage === page ? "#007bff" : "#fff",
+                                    color: currentPage === page ? "#fff" : "#007bff",
+                                    border: "1px solid #007bff",
+                                    borderRadius: "4px",
+                                    cursor: "pointer",
+                                  }}
+                                  key={page}
+                                  onClick={() => setCurrentPage(page)}
+                                >
+                                  {page}
+                                </button>
+                              ))}
+                            
+                              {currentPage < totalPages && (
+                                <>
+                                  {currentPage + 2 < totalPages && (
+                                    <button
+                                      style={{
+                                        margin: "5px",
+                                        padding: "8px 12px",
+                                        fontSize: "14px",
+                                        fontWeight: "normal",
+                                        color: "#007bff",
+                                        border: "1px solid #007bff",
+                                        borderRadius: "4px",
+                                        cursor: "pointer",
+                                      }}
+                                      onClick={() => setCurrentPage(currentPage + 2)}
+                                    >
+                                      ...
+                                    </button>
+                                  )}
+                                 ... <button
+                                    style={{
+                                      margin: "5px",
+                                      padding: "8px 12px",
+                                      fontSize: "14px",
+                                      fontWeight: "normal",
+                                      color: "#007bff",
+                                      border: "1px solid #007bff",
+                                      borderRadius: "4px",
+                                      cursor: "pointer",
+                                    }}
+                                    onClick={() => setCurrentPage(totalPages)}
+                                  >
+                                    {totalPages}
+                                  </button>
+                                </>
+                              )}
+                            
+                              {currentPage < totalPages && (
+                                <button
+                                  style={{
+                                    margin: "5px",
+                                    padding: "8px 12px",
+                                    fontSize: "14px",
+                                    fontWeight: "normal",
+                                    color: "#007bff",
+                                    border: "1px solid #007bff",
+                                    borderRadius: "4px",
+                                    cursor: "pointer",
+                                  }}
+                                  onClick={() => setCurrentPage(currentPage + 1)}
+                                >
+                                  Next
+                                </button>
+                              )}
+                            </span>;
+                            
                            
-
-                          ))}
-                          {currentPage < totalPages && (
-                              <button  style={{
-                                  margin: '5px',
-                                  padding: '8px 12px',
-                                  fontSize: '14px',
-                                  fontWeight:   'normal',
-                              
-                                  color:  '#007bff',
-                                  border: '1px solid #007bff',
-                                  borderRadius: '4px',
-                                  cursor: 'pointer',
-                                }} onClick={() => setCurrentPage(currentPage + 1)}>
-                                Next
-                              </button>
                           
-                          )}
-                          </span>
 
                         </div>
                         <div className="col-lg-3">

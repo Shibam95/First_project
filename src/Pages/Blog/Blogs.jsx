@@ -18,13 +18,13 @@ const Blogs = () => {
     const [currentPage, setCurrentPage] = useState(1);
     const [totalPages, setTotalPages] = useState(1);
     const dispatch = useDispatch();
-    const [data1,setData1]=useState()
-    const [data,setData] = useState();
+    const [data1,setData1]=useState(null)
+    const [data2,setData2] = useState(null);
     const [searchQuery, setSearchQuery] = useState('');
     const [searchResults, setSearchResults] = useState(null);
     const [moreData, setMoreData] = useState([]);
     const [moreData1, setMoreData1] = useState([]);
-
+    const [currentData, setCurrentData] = useState(blogPosts);
     
 
   
@@ -57,7 +57,7 @@ const Blogs = () => {
         const response = await axiosInstance.get(`/view-detailss/${category}`);
         
         //  console.log(response?.data?.data)
-        setData(response?.data?.data)
+        setData2(response?.data?.data)
       } catch (error) {
         
         console.error('Error fetching data:', error);
@@ -81,21 +81,35 @@ const Blogs = () => {
     };
 
    
-    const handleSearch = async (e) => {
+    const handleSearch = (e) => {
         e?.preventDefault();
-        
-          const response = await axiosInstance.get(`/search?q=${searchQuery}`);
-          const data = await response?.data;
-        //   console.log(data)
-          setSearchResults(data.results);
-        
-      };
+    
+        if (searchQuery.trim() !== '') {
+            const encodedQuery = encodeURIComponent(searchQuery);
+            axiosInstance.get(`/search?q=${encodedQuery}`)
+                .then(response => {
+                    const data = response?.data;
+                    setSearchResults(data.results);
+                })
+                .catch(error => {
+                    console.error('Error fetching data:', error);
+                });
+        }
+    };
+    
       
   
     const handleChange = (e) => {
-      setSearchQuery(e.target.value);
-      handleSearch()
+      setSearchQuery(e?.target?.value);
+    
     };
+    useEffect(() => {
+        const delay = setTimeout(() => {
+            handleSearch();
+        }, 500); 
+    
+        return () => clearTimeout(delay); 
+    }, [searchQuery]);
   
     
 
@@ -121,6 +135,21 @@ const Blogs = () => {
     fetchBlogPosts();
   }, [currentPage]);
 // console.log(blogPosts)
+
+useEffect(() => {
+    if (searchResults !== null && searchResults.length > 0) {
+      setCurrentData(searchResults);
+    } else if (data1 !==null && data1.length > 0) {
+      setCurrentData(data1);
+    } else if (data2 !==null && data2.length > 0) {
+      setCurrentData(data2);
+    } else {
+      setCurrentData(blogPosts);
+    }
+  }, [searchResults, data1, data2, blogPosts]);
+
+
+
     return (
         <>
         <Navbar/>
@@ -174,8 +203,7 @@ const Blogs = () => {
                             <div className="row pb-3">
 
                             
-                            {
-                                (searchResults!==null  || data?.length>0 || data1?.length>0) ? (<> {searchResults?.map((p, k) => {
+                             {currentData?.map((p, k) => {
                                     return (
                                         <>
                                             <div key={k} className="col-md-6 mb-4 pb-2">
@@ -202,151 +230,104 @@ const Blogs = () => {
                                 })
                             }
 
-                            {data1?.map((p, m) => {
-                              return (
-                                  <>
-                                      <div key={m} className="col-md-6 mb-4 pb-2">
-                                          <div className="blog-item">
-                                              <div className="position-relative">
-                                                  <img class="img-fluid w-100" src={p?.image} alt="" style={{ height: "230px" }} />
-                                                  <div className="blog-date">
-                                                      <small className="text-white text-uppercase">{p?.date}</small>
-                                                  </div>
-                                              </div>
-                                              <div className="bg-white p-4">
-                                                  <div className=" mb-2">
-                                                      <p>{p?.body}</p>
-                                                      <br></br>
-                                                      <p>{p?.categories}</p>
-                                                      <p>{p?.tags}</p>
-                                                  </div>
-                                                  <h5> <Link className="btn btn-outline-success " style={{marginLeft:"100px"}} to={`/blogdet/${p?._id}`}>Details</Link></h5>
-                                              </div>
-                                          </div>
-                                      </div>
-                                  </>
-                              )
-                          })
-                      }
-
-                      {data?.map((p, n) => {
-                        return (
-                            <>
-                                <div div={n} className="col-md-6 mb-4 pb-2">
-                                    <div className="blog-item">
-                                        <div className="position-relative">
-                                            <img class="img-fluid w-100" src={p?.image} alt="" style={{ height: "230px" }} />
-                                            <div className="blog-date">
-                                                <small className="text-white text-uppercase">{p?.date}</small>
-                                            </div>
-                                        </div>
-                                        <div className="bg-white p-4">
-                                            <div className=" mb-2">
-                                                <p>{p?.body}</p>
-                                                <br></br>
-                                                <p>{p?.categories}</p>
-                                                <p>{p?.tags}</p>
-                                            </div>
-                                            <h5> <Link className="btn btn-outline-success " style={{marginLeft:"100px"}} to={`/blogdet/${p?._id}`}>Details</Link></h5>
-                                        </div>
-                                    </div>
-                                </div>
-                            </>
-                        )
-                    })
-                }
-                            
-                            </>
-                            ) :
-                                 (<> {blogPosts?.map((p, k) => {
-                                    return (
-                                        <>
-                                            <div key={k} className="col-md-6 mb-4 pb-2">
-                                                <div className="blog-item">
-                                                    <div className="position-relative">
-                                                        <img class="img-fluid w-100" src={p?.image} alt="" style={{ height: "230px" }} />
-                                                        <div className="blog-date">
-                                                            <small className="text-white text-uppercase">{p?.date}</small>
-                                                        </div>
-                                                    </div>
-                                                    <div className="bg-white p-4">
-                                                       
-                                                       <div className=" mb-2"  >
-                                                       
-                                                       <p style={{justifyContent:"centre",display:"flex",alignItems:"centre"}}>{p?.body}</p>
-                                                           <p>{p?.categories}</p>
-                                                           <p>{p?.tags}</p>
-                                                       </div>
-                                                       
-                                                        <h5> <Link className="btn btn-outline-success " style={{marginLeft:"100px"}} to={`/blogdet/${p?._id}`}>Details</Link></h5>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </>
-                                    )
-                                })
-                            }</>)
-                            }    
-
                        
-                                {/* Pagination controls */}
-                                 <span style={{marginLeft:"200px"}}>
-                                 
-                                 
-                                {currentPage > 1 && (
-                                    <button style={{
-                                        margin: '5px',
-                                        padding: '8px 12px',
-                                        fontSize: '14px',
-                                        fontWeight:   'normal',
-                                    
-                                        color:  '#007bff' ,
-                                        border: '1px solid #007bff',
-                                        borderRadius: '4px',
-                                        cursor: 'pointer',
-                                      }}  onClick={() => setCurrentPage(currentPage - 1)}>
-                                      Previous
+                            {/* Pagination controls */}
+                            <span style={{ marginLeft: "200px" }}>
+                              {currentPage > 1 && (
+                                <button
+                                  style={{
+                                    margin: "5px",
+                                    padding: "8px 12px",
+                                    fontSize: "14px",
+                                    fontWeight: "normal",
+                                    color: "#007bff",
+                                    border: "1px solid #007bff",
+                                    borderRadius: "4px",
+                                    cursor: "pointer",
+                                  }}
+                                  onClick={() => setCurrentPage(currentPage - 1)}
+                                >
+                                  Previous
+                                </button>
+                              )}
+                            
+                              {Array.from({ length: totalPages }, (_, index) => index + 1).map((page) => (
+                                <button
+                                  style={{
+                                    margin: "5px",
+                                    padding: "8px 12px",
+                                    fontSize: "14px",
+                                    fontWeight: currentPage === page ? "bold" : "normal",
+                                    backgroundColor: currentPage === page ? "#007bff" : "#fff",
+                                    color: currentPage === page ? "#fff" : "#007bff",
+                                    border: "1px solid #007bff",
+                                    borderRadius: "4px",
+                                    cursor: "pointer",
+                                  }}
+                                  key={page}
+                                  onClick={() => setCurrentPage(page)}
+                                >
+                                  {page}
+                                </button>
+                              ))}
+                            
+                              {currentPage < totalPages && (
+                                <>
+                                  {currentPage + 2 < totalPages && (
+                                    <button
+                                      style={{
+                                        margin: "5px",
+                                        padding: "8px 12px",
+                                        fontSize: "14px",
+                                        fontWeight: "normal",
+                                        color: "#007bff",
+                                        border: "1px solid #007bff",
+                                        borderRadius: "4px",
+                                        cursor: "pointer",
+                                      }}
+                                      onClick={() => setCurrentPage(currentPage + 2)}
+                                    >
+                                      ...
                                     </button>
                                   )}
-                                  
-
-                                {Array.from({ length: totalPages }, (_, index) => index + 1).map((page) => (
-                                  <button   style={{
-                                    margin: '5px',
-                                    padding: '8px 12px',
-                                    fontSize: '14px',
-                                    fontWeight: currentPage === page ? 'bold' : 'normal',
-                                    backgroundColor: currentPage === page ? '#007bff' : '#fff',
-                                    color: currentPage === page ? '#fff' : '#007bff',
-                                    border: '1px solid #007bff',
-                                    borderRadius: '4px',
-                                    cursor: 'pointer',
-                                  }} key={page} onClick={() => setCurrentPage(page)}>
-                                    {page}
+                                  ...<button
+                                    style={{
+                                      margin: "5px",
+                                      padding: "8px 12px",
+                                      fontSize: "14px",
+                                      fontWeight: "normal",
+                                      color: "#007bff",
+                                      border: "1px solid #007bff",
+                                      borderRadius: "4px",
+                                      cursor: "pointer",
+                                    }}
+                                    onClick={() => setCurrentPage(totalPages)}
+                                  >
+                                    {totalPages}
                                   </button>
-
-                                 
-
-                                ))}
-                                {currentPage < totalPages && (
-                                    <button  style={{
-                                        margin: '5px',
-                                        padding: '8px 12px',
-                                        fontSize: '14px',
-                                        fontWeight:   'normal',
-                                    
-                                        color:  '#007bff',
-                                        border: '1px solid #007bff',
-                                        borderRadius: '4px',
-                                        cursor: 'pointer',
-                                      }} onClick={() => setCurrentPage(currentPage + 1)}>
-                                      Next
-                                    </button>
-                                
-                                )}
-                                
-                                 </span>
-                                                                                                               
+                                </>
+                              )}
+                            
+                              {currentPage < totalPages && (
+                                <button
+                                  style={{
+                                    margin: "5px",
+                                    padding: "8px 12px",
+                                    fontSize: "14px",
+                                    fontWeight: "normal",
+                                    color: "#007bff",
+                                    border: "1px solid #007bff",
+                                    borderRadius: "4px",
+                                    cursor: "pointer",
+                                  }}
+                                  onClick={() => setCurrentPage(currentPage + 1)}
+                                >
+                                  Next
+                                </button>
+                              )}
+                            </span>;
+                            
+                                                                                                        
                      </div>
                         </div>
 
