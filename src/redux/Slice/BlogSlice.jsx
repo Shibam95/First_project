@@ -3,6 +3,8 @@ import axiosInstance from "../../Api/apiUrl";
 
 const initialState={
     post:[],
+    tagData:[],
+    filteredPosts:[],
     isloading:false,
     isError:false,
 }
@@ -15,8 +17,11 @@ const BlogSlice=createSlice({
     initialState,
     reducers: {
         filteredAction(state,action){
-            state.filteredData=action.payload;
-            state.post = action.payload
+            // console.log(action.payload)
+            state.filteredPosts = action.payload;
+            state.post = action.payload;
+            
+            
         }
     },
     extraReducers:{
@@ -26,6 +31,7 @@ const BlogSlice=createSlice({
         [Apifetch.fulfilled]:(state,{payload})=>{
             state.isloading=false
             state.post=payload
+            state.tagData=payload
            
         },
         [Apifetch.rejected]:(state)=>{
@@ -33,5 +39,5 @@ const BlogSlice=createSlice({
         }
     }
 })
-
+export const {filteredAction}=BlogSlice.actions;
 export default BlogSlice.reducer

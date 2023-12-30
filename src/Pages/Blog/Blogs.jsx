@@ -1,7 +1,7 @@
-import React from 'react'
+import React, { useRef } from 'react'
 import { useEffect, useState } from 'react'
-import { useDispatch, } from 'react-redux'
-import { Apifetch } from '../../redux/Slice/BlogSlice';
+import { useDispatch, useSelector, } from 'react-redux'
+import { Apifetch, filteredAction } from '../../redux/Slice/BlogSlice';
 import { Link } from 'react-router-dom';
 import BlogRecentPosts from './BlogRecentPosts'
 import './Blogs.css'
@@ -13,19 +13,19 @@ import axiosInstance from '../../Api/apiUrl';
 
 
 const Blogs = () => {
-      
+     
     const [blogPosts, setBlogPosts] = useState([]);
     const [currentPage, setCurrentPage] = useState(1);
     const [totalPages, setTotalPages] = useState(1);
     const dispatch = useDispatch();
-    const [data1,setData1]=useState(null)
-    const [data2,setData2] = useState(null);
-    const [searchQuery, setSearchQuery] = useState('');
-    const [searchResults, setSearchResults] = useState(null);
+    const [tags,setTags]=useState([])
+    const [category,setCategory] = useState([]);
+    const [searchQuery, setSearchQuery] = useState("");
+    const [searchResults, setSearchResults] = useState([]);
     const [moreData, setMoreData] = useState([]);
     const [moreData1, setMoreData1] = useState([]);
     const [currentData, setCurrentData] = useState(blogPosts);
-    
+
 
   
      const getMoreData1 = async () => {
@@ -55,9 +55,13 @@ const Blogs = () => {
       // console.log(category)
       try {
         const response = await axiosInstance.get(`/view-detailss/${category}`);
-        
-        //  console.log(response?.data?.data)
-        setData2(response?.data?.data)
+        const responseData = response?.data?.data;
+
+        if (responseData) {
+          setCurrentData(responseData);
+        } else {
+          console.error('Response data is undefined or null');
+        }
       } catch (error) {
         
         console.error('Error fetching data:', error);
@@ -73,7 +77,7 @@ const Blogs = () => {
         const response = await axiosInstance.get(`/view-detail/${tag}`);
         // Handle the response data as needed
         //  console.log(response?.data?.data);
-        setData1(response?.data?.data)
+        setTags(response?.data?.data)
       } catch (error) {
         // Handle errors
         console.error('Error fetching data:', error);
@@ -82,14 +86,14 @@ const Blogs = () => {
 
    
     const handleSearch = (e) => {
-        e?.preventDefault();
-    
+      
+    e?.preventDefault()
         if (searchQuery.trim() !== '') {
-            const encodedQuery = encodeURIComponent(searchQuery);
-            axiosInstance.get(`/search?q=${encodedQuery}`)
+            
+            axiosInstance.get(`/search/${searchQuery}`)
                 .then(response => {
-                    const data = response?.data;
-                    setSearchResults(data.results);
+                    const res = response?.data;
+                    setSearchResults(res.results);
                 })
                 .catch(error => {
                     console.error('Error fetching data:', error);
@@ -101,16 +105,10 @@ const Blogs = () => {
   
     const handleChange = (e) => {
       setSearchQuery(e?.target?.value);
+      handleSearch()
     
     };
-    useEffect(() => {
-        const delay = setTimeout(() => {
-            handleSearch();
-        }, 500); 
     
-        return () => clearTimeout(delay); 
-    }, [searchQuery]);
-  
     
 
     useEffect(() => {
@@ -123,10 +121,10 @@ const Blogs = () => {
     const fetchBlogPosts = async () => {
       try {
         const response = await axiosInstance.get(`/pagination?page=${currentPage}`);
-        const data = await response?.data;
-        setBlogPosts(data.blogPosts);
-        setTotalPages(data.totalPages);
-        // console.log(data)
+        const ressss = await response?.data;
+        setBlogPosts(ressss.blogPosts);
+        setTotalPages(ressss.totalPages);
+        // console.log(ressss)
       } catch (error) {
         console.error('Error fetching blog posts:', error);
       }
@@ -136,17 +134,22 @@ const Blogs = () => {
   }, [currentPage]);
 // console.log(blogPosts)
 
+
+
 useEffect(() => {
-    if (searchResults !== null && searchResults.length > 0) {
+  
+    if (searchResults?.length > 0 ) {
       setCurrentData(searchResults);
-    } else if (data1 !==null && data1.length > 0) {
-      setCurrentData(data1);
-    } else if (data2 !==null && data2.length > 0) {
-      setCurrentData(data2);
+    } else if ( tags?.length > 0) {
+      setCurrentData(tags);
+    } else if ( category?.length > 0) {  
+      setCurrentData(category);
     } else {
       setCurrentData(blogPosts);
     }
-  }, [searchResults, data1, data2, blogPosts]);
+  }, [searchResults, tags, category, blogPosts]);
+
+
 
 
 
@@ -166,8 +169,12 @@ useEffect(() => {
                     </div>
                 </div>
             </div>
+              
+
+            <h5 className="text-uppercase mb-4" style={{display:"flex",justifyContent:"center",alignItems:"center",margin:"auto"}}>Search</h5>
+            
             <div style={{display:"flex",justifyContent:"center",alignItems:"center",marginTop:"2px"}}>
-            <h5 className="text-uppercase mb-4" style={{ paddingLeft: "70px" }}>Search</h5></div>
+            
             <div >
             <div className="input-group">
             
@@ -199,24 +206,74 @@ useEffect(() => {
 
 
 
-            {/* Tag Cloud */}
-            <h5 style={{ paddingLeft: "170px", fontWeight: "600", fontSize: "1.5rem", color: "#333", marginBottom:"5px" }}>Tags</h5>
 
-            <div className="d-flex flex-wrap m-n1">
-            {moreData1?.data?.map((tag1, k) => (
-                <div key={k} className="d-flex flex-wrap m-n1">
-                    <ul style={{ listStyle: "none" }}>
-                        <button
-                            onClick={() => handleButtonClick(tag1.tags)}
-                            className='btn btn-light m-1'
-                            style={{ fontSize: "15px", backgroundColor: "#3498db", color: "#fff" }}
-                        >
-                            <li>{tag1.tags}</li>
-                        </button>
-                    </ul>
-                </div>
-            ))}
-        </div>
+            </div>
+
+
+
+
+            {/* Tag Cloud */}
+            <h5 className="text-uppercase m-4" style={{display:"flex",justifyContent:"center",alignItems:"center",margin:"auto"}}>Tags</h5>
+           <div style={{display:"flex",justifyContent:"center",alignItems:"center",margin:"auto"}}>
+           
+           <div className="d-flex flex-wrap m-n1">
+           
+
+           {moreData1?.data?.map((tag1, k) => (
+               <div key={k} className="d-flex flex-wrap m-n1" >
+                   <ul style={{ listStyle: "none" }}>
+                       <button
+                           onClick={() => handleButtonClick(tag1.tags)}
+                           className='btn btn-light m-1'
+                           style={{ fontSize: "15px", backgroundColor: "#3498db", color: "#fff" }}
+                       >
+                           <li>{tag1.tags}</li>
+                          
+                       </button>
+                   </ul>
+               </div>
+           ))}
+       </div>
+       
+
+   
+           
+           
+           </div>
+ 
+  
+                               
+        {/* Category List */}
+        <h5 className="text-uppercase mb-4" style={{display:"flex",justifyContent:"center",alignItems:"center",margin:"auto"}}>Categories</h5>
+       <div  style={{display:"flex",justifyContent:"center",alignItems:"center",margin:"auto"}}>
+       
+       <div className="d-flex flex-wrap m-n1" >
+
+
+<>
+{
+  moreData?.data?.map((location,k)=>{
+   // console.log(location)
+      return(
+          <>
+          <div key={k} className="d-flex flex-wrap m-n1">
+          <ul style={{listStyle:"none"}}>
+              <button  onClick={() => handleButtonClick1(location.category)}  className='btn btn-light m-1'
+              style={{ fontSize: "15px", backgroundColor: "#3498db", color: "#fff" }}
+          > <li> {location.category}</li></button>
+          </ul>
+          </div>
+          </>
+      )
+  })
+}
+</>
+</div>
+       
+       </div>
+          
+
+       
         
     
 
@@ -362,38 +419,7 @@ useEffect(() => {
 
                            
                            
-                            <div className="mb-5" style={{ paddingLeft: "80px", display: "flex" }}>
- 
-  
-                               
-                                       {/* Category List */}
-                             <div className="mb-5" style={{ borderRight: "1px solid #ccc", paddingRight: "10px" }}>
-                             
-                             <div className="d-flex flex-wrap m-n1" style={{ paddingLeft: "50px" }}>
-                             <h5 className="text-uppercase mb-4" style={{marginRight:"145px"}}>Categories</h5>
-           
-                             <>
-                             {
-                                 moreData?.data?.map((location,k)=>{
-                                  // console.log(location)
-                                     return(
-                                         <>
-                                         <div key={k} className="d-flex flex-wrap m-n1">
-                                         <ul style={{listStyle:"none"}}>
-                                             <button  onClick={() => handleButtonClick1(location.category)}  className='btn btn-light m-1'
-                                             style={{ fontSize: "15px", backgroundColor: "#3498db", color: "#fff" }}
-                                         > <li> {location.category}</li></button>
-                                         </ul>
-                                         </div>
-                                         </>
-                                     )
-                                 })
-                             }
-                             </>
-                             </div>
-                                         </div>
-
-                                      </div>
+                           
 
                                  
                             {/* <!-- Recent Post --> */}
