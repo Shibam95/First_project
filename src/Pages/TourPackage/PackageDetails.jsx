@@ -17,6 +17,7 @@ const PackageDetails = () => {
   const [userName, setUserName] = useState('');
   const [userEmail, setUserEmail] = useState('');
   const [userContact, setUserContact] = useState('');
+  const [refundAmount, setRefundAmount] = useState('');
 
 
 
@@ -76,12 +77,36 @@ const PackageDetails = () => {
       });
       rzp1.open();
       e.preventDefault();
-      localStorage.removeItem("id");
+      localStorage.removeItem("orderId");
+      localStorage.removeItem("paymentId");
     } else {
       console.error("Razorpay script not loaded");
     }
     
   }
+
+
+  const handleRefund = async () => {
+    try {
+      const response = await axiosInstance.post('/refund',{
+        paymentId: localStorage.getItem("paymentId"),
+        refundAmount: refundAmount * 100,
+      
+      });
+
+      if (response.status === 200) {
+        const result = await response.data;
+        // console.log(result);
+        toast(result.msg);
+      } else {
+        // Handle error when the response status is not 200
+        console.error('Refund failed:', response.statusText);
+      }
+      
+    } catch (error) {
+      console.error('Error during refund:', error);
+    }
+  };
 
   const getMoreData = async () => {
     const res = await axiosInstance.get(`/tour-package-form/${id}`);
@@ -180,6 +205,18 @@ const PackageDetails = () => {
                     >
                       Payment
                     </button>
+
+                    <label>
+                    Refund Amount :
+                    <input
+                      type="number"
+                      value={refundAmount}
+                      onChange={(e) => setRefundAmount(e.target.value)}
+                    />
+                  </label>
+                  <br />
+                  <button onClick={handleRefund} className='btn btn-warning'>Refund</button>
+                
                   
               </div>
               </div>

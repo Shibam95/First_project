@@ -9,6 +9,7 @@ import Modal from '@mui/material/Modal';
 import Typography from '@mui/material/Typography';
 import { Contactetails } from '../Contactdetails';
 import { Paymentdetails } from '../Paymentdetails';
+import { Refunddetail } from '../Refunddetail';
 
 const style = {
   position: 'absolute',
@@ -80,9 +81,9 @@ export const Admin = () => {
                       />
                     </svg>
                   </div>
-                  <p className="text-white m-0">{data} </p>
-                  <p className="text-white m-0">{email}</p>
-                  <p className="text-white m-0">{password?.slice(0, 2)}*******</p>
+                  <p className=" m-0" style={{color:"blue"}}>{data} </p>
+                  <p className=" m-0" style={{color:"blue"}}>{email}</p>
+                  <p className=" m-0" style={{color:"blue"}}>{password?.slice(0, 2)}*******</p>
                 </div>
               </>
             ) : (
@@ -106,6 +107,14 @@ export const Admin = () => {
                 <h4 style={{ background: 'lightgreen', width: '260px' }}>Payment Details</h4>
                 {data ? <Paymentdetails /> : ''}
                 <br />
+
+
+                
+                <div className="col-md-12 mt-4">
+                <h4 style={{ background: 'lightgreen', width: '260px' }}>Refund Details</h4>
+                {data ? <Refunddetail /> : ''}
+                <br />
+                
                 
                 <div className="">
                   <h4 style={{ background: 'lightgreen', width: '200px' }}>Contact Details</h4>
@@ -149,5 +158,7 @@ export const Admin = () => {
       </div>
     </div>
     </div>
+    </div>
+
   );
 };

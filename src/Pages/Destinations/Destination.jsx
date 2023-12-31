@@ -43,7 +43,7 @@ const Destination = () => {
             }}
           >
             {destination?.map((e) => (
-              <div key={e._id} >
+              <div key={e._id} style={{width:"280%"}}>
                 <div className="col-lg-4 col-md-6 mb-4" >
                   <div className="destination-item position-relative overflow-hidden mb-2">
                     <img

@@ -6,7 +6,8 @@ import { paymentfetchdata } from '../redux/Slice/paymentslice';
 
 export const Paymentdetails = () => {
     const dispatch = useDispatch();
-    const orderId=localStorage.getItem("id")
+    const orderId=localStorage.getItem("orderId")
+    const paymentId=localStorage.getItem("paymentId")
 
     const {paymentdata1}= useSelector((state) => state?.payment);
     // console.log(paymentdata1)
@@ -23,11 +24,13 @@ export const Paymentdetails = () => {
                 <table className="table mt-2">
                     <thead>
                         <tr>
-                            <th scope="col">Id</th>
+                            <th scope="col">orderId</th>
+                            <th scope='col'>paymentId</th>
                             <th scope="col">Amount</th>
                             <th scope="col">AmountPaid</th>
                             <th scope="col">Receipt</th>
                             <th scope="col">Status</th>
+                            
                             
 
                         </tr>
@@ -37,6 +40,7 @@ export const Paymentdetails = () => {
                             
                                         <tr >
                                             <th>{paymentdata1.id}</th>
+                                            <th>{paymentId}</th>
                                             <td>{paymentdata1.amount}</td>
                                             <td>{paymentdata1.amount_paid}</td>
                                             <td>{paymentdata1.receipt}</td>

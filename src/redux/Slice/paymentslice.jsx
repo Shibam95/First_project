@@ -6,10 +6,20 @@ export const paymentfetchdata=createAsyncThunk("payments",async(orderId)=>{
   
     const res= await axiosInstance.get(`/details1/${orderId}`);
     
-    //  console.log(res?.data)
+    //   console.log(res?.data)
     return res?.data;
 
 })
+
+export const paymentrefundfetchdata=createAsyncThunk("paymentsrefund",async(paymentId)=>{
+  
+    const res= await axiosInstance.get(`/payment/${paymentId}`);
+    
+    //    console.log(res?.data)
+    return res?.data;
+
+})
+
 
 
 export const paymentdelete=createAsyncThunk("payments",async(id)=>{
@@ -25,6 +35,7 @@ export const paymentdelete=createAsyncThunk("payments",async(id)=>{
 
 const initialState=({
 paymentdata1:{},
+paymentrefunddata:{}
 })
 
 
@@ -37,6 +48,11 @@ const paymentSlice=createSlice({
         [paymentfetchdata.fulfilled]: (state, { payload }) => {
             
             state.paymentdata1 = payload;
+        },
+
+        [paymentrefundfetchdata.fulfilled]: (state, { payload }) => {
+            
+            state.paymentrefunddata = payload;
         },
         
     }
