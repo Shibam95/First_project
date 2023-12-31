@@ -18,10 +18,8 @@ const Blogs = () => {
     const [currentPage, setCurrentPage] = useState(1);
     const [totalPages, setTotalPages] = useState(1);
     const dispatch = useDispatch();
-    const [tags,setTags]=useState([])
-    const [category,setCategory] = useState([]);
     const [searchQuery, setSearchQuery] = useState("");
-    const [searchResults, setSearchResults] = useState([]);
+    const [searchResults, setSearchResults] = useState(null);
     const [moreData, setMoreData] = useState([]);
     const [moreData1, setMoreData1] = useState([]);
     const [currentData, setCurrentData] = useState(blogPosts);
@@ -77,7 +75,7 @@ const Blogs = () => {
         const response = await axiosInstance.get(`/view-detail/${tag}`);
         // Handle the response data as needed
         //  console.log(response?.data?.data);
-        setTags(response?.data?.data)
+        setCurrentData(response?.data?.data)
       } catch (error) {
         // Handle errors
         console.error('Error fetching data:', error);
@@ -92,8 +90,9 @@ const Blogs = () => {
             
             axiosInstance.get(`/search/${searchQuery}`)
                 .then(response => {
-                    const res = response?.data;
-                    setSearchResults(res.results);
+                    const res = response?.data?.results;
+                    // console.log(res)
+                    setCurrentData(res);
                 })
                 .catch(error => {
                     console.error('Error fetching data:', error);
@@ -105,8 +104,7 @@ const Blogs = () => {
   
     const handleChange = (e) => {
       setSearchQuery(e?.target?.value);
-      handleSearch()
-    
+    handleSearch()
     };
     
     
@@ -138,16 +136,10 @@ const Blogs = () => {
 
 useEffect(() => {
   
-    if (searchResults?.length > 0 ) {
-      setCurrentData(searchResults);
-    } else if ( tags?.length > 0) {
-      setCurrentData(tags);
-    } else if ( category?.length > 0) {  
-      setCurrentData(category);
-    } else {
+   
       setCurrentData(blogPosts);
-    }
-  }, [searchResults, tags, category, blogPosts]);
+    
+  }, [ blogPosts]);
 
 
 
@@ -170,8 +162,6 @@ useEffect(() => {
                 </div>
             </div>
               
-
-            <h5 className="text-uppercase mb-4" style={{display:"flex",justifyContent:"center",alignItems:"center",margin:"auto"}}>Search</h5>
             
             <div style={{display:"flex",justifyContent:"center",alignItems:"center",marginTop:"2px"}}>
             
@@ -196,6 +186,7 @@ useEffect(() => {
                     }}
                   />
                   
+                  
     
                   
                   
@@ -213,7 +204,7 @@ useEffect(() => {
 
 
             {/* Tag Cloud */}
-            <h5 className="text-uppercase m-4" style={{display:"flex",justifyContent:"center",alignItems:"center",margin:"auto"}}>Tags</h5>
+            <h5 className="text-uppercase m-4" style={{display:"flex",justifyContent:"center",alignItems:"center",margin:"auto"}}>Tags Cloud</h5>
            <div style={{display:"flex",justifyContent:"center",alignItems:"center",margin:"auto"}}>
            
            <div className="d-flex flex-wrap m-n1">
@@ -406,7 +397,7 @@ useEffect(() => {
                                   Next
                                 </button>
                               )}
-                            </span>;
+                            </span>
                             
                                                                                                         
                      </div>
