@@ -115,7 +115,7 @@ const Footer = () => {
             </p>
             <p>
               <i className="fa fa-envelope mr-2" />
-              goldenwings@gmail.com
+              shibambasak2013@gmail.com
             </p>
             <h6
               className="text-white text-uppercase mt-4 mb-3"

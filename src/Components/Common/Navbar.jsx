@@ -28,7 +28,7 @@ const Navbar = () => {
               <div className="d-inline-flex align-items-center">
                 <p>
                   <i className="fa fa-envelope mr-2" />
-                  goldenwings@gmail.com
+                  shibambasak2013@gmail.com
                 </p>
                 <p className="text-body px-3">|</p>
                 <p>
