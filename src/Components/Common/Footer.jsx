@@ -107,7 +107,7 @@ const Footer = () => {
             </h5>
             <p>
               <i className="fa fa-map-marker-alt mr-2" />
-              Eco Space, Sec-V, Kolkata
+              2no nutan fulia,Nadia,741402
             </p>
             <p>
               <i className="fa fa-phone-alt mr-2" />
