@@ -212,7 +212,7 @@ export const Register = () => {
 <button onClick={SubmitInfo} className='btn1'>Sign up</button>
 <div className='create-account'>
 
-<p>Allready Have An Account?<Link  to={'/'}>Sign in</Link></p>
+<p>Allready Have An Account?<Link  to={'/login'}>Sign in</Link></p>
 </div>
 </form>
 </div>

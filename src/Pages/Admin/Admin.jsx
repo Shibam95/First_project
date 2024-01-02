@@ -10,6 +10,7 @@ import Typography from '@mui/material/Typography';
 import { Contactetails } from '../Contactdetails';
 import { Paymentdetails } from '../Paymentdetails';
 import { Refunddetail } from '../Refunddetail';
+import axiosInstance from '../../Api/apiUrl';
 
 const style = {
   position: 'absolute',
@@ -29,8 +30,32 @@ export const Admin = () => {
   const email = localStorage.getItem('email1');
   const password = localStorage.getItem('password');
   const navigate = useNavigate();
-  const dispatch = useDispatch();
-  const { bookingConfirmationStatus } = useSelector((state) => state.booking);
+  const [paymentId, setPaymentId]= useState("");
+  const [refundAmount, setRefundAmount] = useState('');
+
+  const handleRefund = async () => {
+    try {
+      const response = await axiosInstance.post('/refund',{
+        paymentId: paymentId,
+        refundAmount: refundAmount*100 ,
+      
+      });
+
+      if (response.status === 200) {
+        const result = await response.data;
+        // console.log(result);
+        toast(result.msg);
+      } else {
+        // Handle error when the response status is not 200
+        console.error('Refund failed:', response.statusText);
+      }
+      
+    } catch (error) {
+      console.error('Error during refund:', error);
+    }
+  };
+
+
 
   const Logouthandle = () => {
     localStorage.removeItem('name1');
@@ -95,6 +120,44 @@ export const Admin = () => {
                 DashBoard
               </button>
             )}
+            <br></br>
+   <form style={{ marginTop: '50px', }}>
+            <label style={{ display: 'block', margin: '10px 0' }}>
+            PaymentId
+            <input
+              type="text"
+              value={paymentId}
+              onChange={(e) => setPaymentId(e.target.value)}
+              style={{
+                marginLeft: '10px',
+                padding: '5px',
+                borderRadius: '5px',
+                border: '1px solid #ccc',
+                fontSize: '14px',
+              }}
+            />
+          </label>
+          
+          <label style={{ display: 'block', margin: '10px 0' }}>
+            Refund Amount
+            <input
+              type="number"
+              value={refundAmount}
+              onChange={(e) => setRefundAmount(e.target.value)}
+              style={{
+                marginLeft: '10px',
+                padding: '5px',
+                borderRadius: '5px',
+                border: '1px solid #ccc',
+                fontSize: '14px',
+              }}
+            />
+          </label>
+          </form>
+          <br />
+          
+          <button onClick={handleRefund} className='btn btn-warning' style={{ marginTop: '10px',display:"flex",justifyContent:"center",alignItems:"center",margin:"auto" }}>Refund</button>
+          
           </div>
           <div className="col-md-9">
             <div className="row">

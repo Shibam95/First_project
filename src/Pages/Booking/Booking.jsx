@@ -48,7 +48,7 @@ export const Booking = () => {
   const [userName, setUserName] = useState('');
   const [userEmail, setUserEmail] = useState('');
   const [userContact, setUserContact] = useState('');
-  const [refundAmount, setRefundAmount] = useState('');
+  
 
   const paymentHandler = async (e) => {
     const response = await axiosInstance.post("/Create", {
@@ -122,29 +122,7 @@ export const Booking = () => {
   
 
 
-  const handleRefund = async () => {
-    try {
-      const response = await axiosInstance.post('/refund',{
-        paymentId: localStorage.getItem("paymentId"),
-        refundAmount: refundAmount * 100,
-      
-      });
-
-      if (response.status === 200) {
-        const result = await response.data;
-        // console.log(result);
-        toast(result.msg);
-      } else {
-        // Handle error when the response status is not 200
-        console.error('Refund failed:', response.statusText);
-      }
-      
-    } catch (error) {
-      console.error('Error during refund:', error);
-    }
-  };
-
-
+ 
   
 
 
@@ -439,17 +417,7 @@ export const Booking = () => {
                   Payment
                 </button>
 
-                <label>
-                    Refund Amount :
-                    <input
-                      type="number"
-                      value={refundAmount}
-                      onChange={(e) => setRefundAmount(e.target.value)}
-                    />
-                  </label>
-                  <br />
-                  <button onClick={handleRefund} className='btn btn-warning'>Refund</button>
-                
+                <p>Note: Refund will be done by admin when user contact with us with there respective paymentId so carefully save your paymentId after succesfull payment.</p>
 
               </div>
       </div>
