@@ -15,9 +15,10 @@ const initialState = {
 export const registerUser = createAsyncThunk("signup", async (formdata) => {
   try {
     const ress = await axiosInstance.post("/registration", formdata);
+    console.log(ress)
     return ress?.data
   } catch (error) {
-    // console.log(error);
+    throw new error("error")
   }
 });
 
@@ -75,22 +76,22 @@ export const AuthSlice = createSlice({
       state.error = null
     },
     [registerUser.fulfilled]: (state, { payload }) => {
-      // console.log(payload)
       if (payload?.status === true) {
-        localStorage.setItem("name", payload.data.name)
-        localStorage.setItem("pic", payload.data.image)
-        localStorage.setItem("email", payload.data.email)
-        state.redirectReg = "/login"
-        state.loading=false
-        toast(`hi ${payload?.data?.name} Register successfully done`)
-      }else{
-        if(payload?.status === 400){
-          state.redirectReg = "/register"
-          toast("Email already exist")
-         }
-      }
-
+        localStorage.setItem("name", payload.data.name);
+        localStorage.setItem("pic", payload.data.image);
+        localStorage.setItem("email", payload.data.email);
+        state.redirectReg = "/login";
+        state.loading = false;
+        toast(`hi ${payload?.data?.name} Register successfully done`);
+      } 
+          console.log(payload)
+        if (payload?.status === false ) {
+          state.redirectReg = "/register";
+          toast("Email already exists");
+        } 
+      
     },
+    
     [registerUser.rejected]: (state, { payload }) => {
       state.loading = false
       state.error = payload

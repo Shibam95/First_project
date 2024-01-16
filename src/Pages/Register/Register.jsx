@@ -113,15 +113,15 @@ export const Register = () => {
                 
           
                 
-                if (redirectReg) {
-                 const ress= await axiosInstance.post('/send-registration-email', {
-                    email: user.email,
-                  });
-                //   console.log(ress?.data?.message)
-                 toast(ress?.data?.message)
-                 navigate("/login")
+                // if (redirectReg) {
+                //  const ress= await axiosInstance.post('/send-registration-email', {
+                //     email: user.email,
+                //   });
+                // //   console.log(ress?.data?.message)
+                //  toast(ress?.data?.message)
+                //  navigate("/login")
                   
-                }
+                // }
               } catch (error) {
                 console.error('Registration error:', error);
               }
